@@ -31,7 +31,7 @@ roboi_udp::roboi_udp(rclcpp::Node* node, rclcpp::CallbackGroup::SharedPtr callba
     RCLCPP_INFO(node_->get_logger(), "udptimer error");
 
   auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
-  udp_send_sub_ = node_->create_subscription<std_msgs::msg::Float64MultiArray>("/udp/commands", qos_profile,
+  udp_send_sub_ = node_->create_subscription<roboi_amr_msgs::msg::Udpsend>("/udp/commands", qos_profile,
                                     std::bind(&roboi_udp::udp_callback, this, std::placeholders::_1), options);
 
   led_command_pub_ = node_->create_publisher<std_msgs::msg::UInt16MultiArray>("/led/commands", qos_profile);
@@ -130,12 +130,12 @@ int roboi_udp::udp_send(udp_cfg *udp_out_configuration, void *data, int data_len
                   sizeof(udp_out_configuration->sockaddr)
               );
 }
-
-int roboi_udp::udp_send(udp_cfg *udp_out_configuration, udp_status_t data, int data_len)
+//(roboi_amr_msgs::msg::Udpsend *)&
+int roboi_udp::udp_send(udp_cfg *udp_out_configuration, roboi_amr_msgs::msg::Udpsend::SharedPtr data, int data_len)
 {
   return sendto(
                   udp_out_configuration->fd,
-                  (udp_status_t *)&data,
+                  &data,
                   data_len,
                   MSG_CONFIRM,
                   (const struct sockaddr *) &udp_out_configuration->sockaddr,
@@ -162,14 +162,14 @@ void roboi_udp::timer_callback()
 {
   if( isConnect == false )
   {
-    if(udp_send(&udp_out_configuration, udp_stats, sizeof(udp_status_t)) != -1)
+    if(udp_send(&udp_out_configuration, sharedPtr(udp_stats), sizeof(roboi_amr_msgs::msg::Udpsend)) != -1)
       isConnect = true;
   }
 
   if((udp_stats.count%staterate) == 1)
   {
     //RCLCPP_INFO(node_->get_logger(), "Timer : %d", udp_stats.count);
-    udp_send(&udp_out_configuration, udp_stats, sizeof(udp_status_t));
+    udp_send(&udp_out_configuration, sharedPtr(udp_stats), sizeof(roboi_amr_msgs::msg::Udpsend));
   }
 
   if(isConnect)
@@ -197,8 +197,8 @@ void roboi_udp::data_paser(udp_packet_t *packet)
   }
 }
 
-void roboi_udp::udp_callback(const std_msgs::msg::Float64MultiArray::SharedPtr udp_msg)
+void roboi_udp::udp_callback(const roboi_amr_msgs::msg::Udpsend::SharedPtr udp_msg)
 {
-
+  udp_send(&udp_out_configuration, udp_msg, sizeof(roboi_amr_msgs::msg::Udpsend));  
 }
 

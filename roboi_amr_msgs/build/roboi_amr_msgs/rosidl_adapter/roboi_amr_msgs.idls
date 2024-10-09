@@ -1,0 +1,4 @@
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs/rosidl_adapter/roboi_amr_msgs:msg/Ststatus.idl
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs/rosidl_adapter/roboi_amr_msgs:msg/Ledcommand.idl
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs/rosidl_adapter/roboi_amr_msgs:msg/Udpsend.idl
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs/rosidl_adapter/roboi_amr_msgs:srv/LedCommand.idl

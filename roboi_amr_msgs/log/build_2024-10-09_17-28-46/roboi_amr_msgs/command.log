@@ -1,0 +1,2 @@
+Invoking command in '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs -- -j8 -l8
+Invoked command in '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/build/roboi_amr_msgs -- -j8 -l8

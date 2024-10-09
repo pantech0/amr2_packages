@@ -8,7 +8,9 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
-        "msg/Sterringmsg.msg"
+        "msg/Ststatus.msg"
+        "msg/Ledcommand.msg"
+        "msg/Udpsend.msg"
         )
 
 set(srv_files

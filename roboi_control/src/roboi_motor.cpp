@@ -60,7 +60,7 @@ roboi_motor::roboi_motor(rclcpp::Node* node, rclcpp::CallbackGroup::SharedPtr ca
   pos_command_sub_ = node_->create_subscription<std_msgs::msg::Float64MultiArray>("/position_controller/commands", qos_profile,
                                     std::bind(&roboi_motor::pos_command_callback, this, std::placeholders::_1), options);
 
-  //upd_command_pub_ = node_->create_publisher<std_msgs::msg::UInt16MultiArray>("/udp/commands", qos_profile);
+  upd_command_pub_ = node_->create_publisher<roboi_amr_msgs::msg::Udpsend>("/udp/commands", qos_profile);
 
 }
 
@@ -72,6 +72,7 @@ roboi_motor::~roboi_motor()
 void roboi_motor::timer_callback()
 {
   rclcpp::Time stamp = node_->now();
+  roboi_amr_msgs::msg::Udpsend motor_udp;
 
   auto fut_fl = std::async([this]() {
     return (steering_fl_->Get_Status());
@@ -89,6 +90,9 @@ void roboi_motor::timer_callback()
     return (steering_rr_->Get_Status());
   });
 
+  memcpy(&motor_udp.st_fl, &steering_fl_->Status, sizeof(roboi_amr_msgs::msg::Udpsend));
+
+  upd_command_pub_->publish(motor_udp);
 }
 
 void roboi_motor::pos_command_callback(const std_msgs::msg::Float64MultiArray::SharedPtr pos_command_msg)

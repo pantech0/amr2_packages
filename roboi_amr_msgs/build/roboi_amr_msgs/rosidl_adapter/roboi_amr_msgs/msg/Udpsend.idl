@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roboi_amr_msgs/msg/Udpsend.msg
+// generated code does not contain a copyright notice
+
+#include "roboi_amr_msgs/msg/Stststus.idl"
+
+module roboi_amr_msgs {
+  module msg {
+    struct Udpsend {
+      int32 count;
+
+      uint8 isindicator;
+
+      roboi_amr_msgs::msg::Stststus st_fl;
+
+      roboi_amr_msgs::msg::Stststus st_fr;
+
+      roboi_amr_msgs::msg::Stststus st_rl;
+
+      roboi_amr_msgs::msg::Stststus st_rr;
+    };
+  };
+};

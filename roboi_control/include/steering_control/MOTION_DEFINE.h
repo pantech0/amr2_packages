@@ -1,3 +1,10 @@
+//////////////////////////////////////////////////////////////////////////
+//
+//	File:			MOTION_DEFINE.h
+//	Last Modified Date:	24.07.18
+//	Last Modified Ver:	1.0.1
+//
+//////////////////////////////////////////////////////////////////////////
 
 #pragma once
 #include <stdlib.h>
@@ -468,33 +475,6 @@ typedef union
 
 #pragma pack()
 
-//------------------------------------------------------------------
-//                 EZ Servo All Status.
-//------------------------------------------------------------------
-#pragma pack(1)
-typedef struct
-{
-    bool isbErrorAll;
-    bool isbLimitOverPositive;
-    bool isbLimitOverNegative;
-    bool isbOverCurrent;
-    bool isbOverHeat;
-    bool isbEmergencyStop;
-    bool isbOriginReturn;
-    bool isbServoOn;
-    bool isbAlarmReset;
-    bool isbPositionTableEnd;
-    bool isbMotionMoving;
-    bool isbMotionPause;
-    bool isbOverLoad;
-    bool isbMotorStop;
-    int cmdPos;
-    int actPos;
-    int actPosErr;
-    int actVel;
-    ushort PosItemNo;
-}EzServo_Alarm;
-#pragma pack()
 //------------------------------------------------------------------
 //                 Alarm Type Defines.
 //------------------------------------------------------------------

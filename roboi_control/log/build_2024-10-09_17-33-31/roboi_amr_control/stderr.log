@@ -1,0 +1,74 @@
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:134:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_amr_msgs::msg::Udpsend, int)[m[K’
+  134 | int [01;31m[Kroboi_udp[m[K::udp_send(udp_cfg *udp_out_configuration, roboi_amr_msgs::msg::Udpsend data, int data_len)
+      |     [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:5:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_udp::udp_status_t, int)[m[K’
+  109 | int [01;36m[Kudp_send[m[K(udp_cfg *udp_out_configuration, udp_status_t data, int data_len);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:5:[m[K [01;36m[Knote: [m[K                ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, void*, int)[m[K’
+  122 | int [01;36m[Kroboi_udp[m[K::udp_send(udp_cfg *udp_out_configuration, void *data, int data_len)
+      |     [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass roboi_udp[m[K’ defined here
+   19 | class [01;36m[Kroboi_udp[m[K
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:134:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktypedef struct roboi_udp::udp_cfg roboi_udp::udp_cfg[m[K’ is private within this context
+  134 | int roboi_udp::udp_send([01;31m[Kudp_cfg[m[K *udp_out_configuration, roboi_amr_msgs::msg::Udpsend data, int data_len)
+      |                         [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:84:3:[m[K [01;36m[Knote: [m[Kdeclared private here
+   84 | } [01;36m[Kudp_cfg[m[K;
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:[m[K In member function ‘[01m[Kvoid roboi_udp::timer_callback()[m[K’:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:165:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kroboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_amr_msgs::msg::Udpsend&, long unsigned int)[m[K’
+  165 |     if([01;31m[Kudp_send(&udp_out_configuration, udp_stats, sizeof(roboi_amr_msgs::msg::Udpsend))[m[K != -1)
+      |        [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, void*, int)[m[K’
+  122 | int [01;36m[Kroboi_udp[m[K::udp_send(udp_cfg *udp_out_configuration, void *data, int data_len)
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:63:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kroboi_amr_msgs::msg::Udpsend[m[K’ {aka ‘[01m[Kroboi_amr_msgs::msg::Udpsend_<std::allocator<void> >[m[K’} to ‘[01m[Kvoid*[m[K’
+  122 | int roboi_udp::udp_send(udp_cfg *udp_out_configuration, [01;36m[Kvoid *data[m[K, int data_len)
+      |                                                         [01;36m[K~~~~~~^~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_udp::udp_status_t, int)[m[K’
+  109 | int [01;36m[Kudp_send[m[K(udp_cfg *udp_out_configuration, udp_status_t data, int data_len);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:59:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kroboi_amr_msgs::msg::Udpsend[m[K’ {aka ‘[01m[Kroboi_amr_msgs::msg::Udpsend_<std::allocator<void> >[m[K’} to ‘[01m[Kroboi_udp::udp_status_t[m[K’
+  109 | int udp_send(udp_cfg *udp_out_configuration, [01;36m[Kudp_status_t data[m[K, int data_len);
+      |                                              [01;36m[K~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:172:13:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kroboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_amr_msgs::msg::Udpsend&, long unsigned int)[m[K’
+  172 |     [01;31m[Kudp_send(&udp_out_configuration, udp_stats, sizeof(roboi_amr_msgs::msg::Udpsend))[m[K;
+      |     [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, void*, int)[m[K’
+  122 | int [01;36m[Kroboi_udp[m[K::udp_send(udp_cfg *udp_out_configuration, void *data, int data_len)
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:63:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kroboi_amr_msgs::msg::Udpsend[m[K’ {aka ‘[01m[Kroboi_amr_msgs::msg::Udpsend_<std::allocator<void> >[m[K’} to ‘[01m[Kvoid*[m[K’
+  122 | int roboi_udp::udp_send(udp_cfg *udp_out_configuration, [01;36m[Kvoid *data[m[K, int data_len)
+      |                                                         [01;36m[K~~~~~~^~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_udp::udp_status_t, int)[m[K’
+  109 | int [01;36m[Kudp_send[m[K(udp_cfg *udp_out_configuration, udp_status_t data, int data_len);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:59:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kroboi_amr_msgs::msg::Udpsend[m[K’ {aka ‘[01m[Kroboi_amr_msgs::msg::Udpsend_<std::allocator<void> >[m[K’} to ‘[01m[Kroboi_udp::udp_status_t[m[K’
+  109 | int udp_send(udp_cfg *udp_out_configuration, [01;36m[Kudp_status_t data[m[K, int data_len);
+      |                                              [01;36m[K~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:[m[K In member function ‘[01m[Kvoid roboi_udp::udp_callback(roboi_amr_msgs::msg::Udpsend_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:202:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kroboi_udp::udp_send(roboi_udp::udp_cfg*, const SharedPtr&, long unsigned int)[m[K’
+  202 |   [01;31m[Kudp_send(&udp_out_configuration, udp_msg, sizeof(roboi_amr_msgs::msg::Udpsend))[m[K;
+      |   [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, void*, int)[m[K’
+  122 | int [01;36m[Kroboi_udp[m[K::udp_send(udp_cfg *udp_out_configuration, void *data, int data_len)
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:122:63:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<roboi_amr_msgs::msg::Udpsend_<std::allocator<void> > >[m[K’} to ‘[01m[Kvoid*[m[K’
+  122 | int roboi_udp::udp_send(udp_cfg *udp_out_configuration, [01;36m[Kvoid *data[m[K, int data_len)
+      |                                                         [01;36m[K~~~~~~^~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint roboi_udp::udp_send(roboi_udp::udp_cfg*, roboi_udp::udp_status_t, int)[m[K’
+  109 | int [01;36m[Kudp_send[m[K(udp_cfg *udp_out_configuration, udp_status_t data, int data_len);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:109:59:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<roboi_amr_msgs::msg::Udpsend_<std::allocator<void> > >[m[K’} to ‘[01m[Kroboi_udp::udp_status_t[m[K’
+  109 | int udp_send(udp_cfg *udp_out_configuration, [01;36m[Kudp_status_t data[m[K, int data_len);
+      |                                              [01;36m[K~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:90: CMakeFiles/roboi_amr_control.dir/src/roboi_udp.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roboi_amr_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

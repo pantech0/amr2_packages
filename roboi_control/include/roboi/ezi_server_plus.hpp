@@ -12,30 +12,30 @@
 using namespace PE;
 #define ST_GART_RATE 100
 
-// #pragma pack(1)
-// typedef struct
-// {
-//     bool isbErrorAll;
-//     bool isbLimitOverPositive;
-//     bool isbLimitOverNegative;
-//     bool isbOverCurrent;
-//     bool isbOverHeat;
-//     bool isbEmergencyStop;
-//     bool isbOriginReturn;
-//     bool isbServoOn;
-//     bool isbAlarmReset;
-//     bool isbPositionTableEnd;
-//     bool isbMotionMoving;
-//     bool isbMotionPause;
-//     bool isbOverLoad;
-//     bool isbMotorStop;
-//     int cmdPos;
-//     int actPos;
-//     int actPosErr;
-//     int actVel;
-//     ushort PosItemNo;
-// }EzServo_Alarm;
-// #pragma pack()
+#pragma pack(1)
+typedef struct
+{
+    bool isbErrorAll;
+    bool isbLimitOverPositive;
+    bool isbLimitOverNegative;
+    bool isbOverCurrent;
+    bool isbOverHeat;
+    bool isbEmergencyStop;
+    bool isbOriginReturn;
+    bool isbServoOn;
+    bool isbAlarmReset;
+    bool isbPositionTableEnd;
+    bool isbMotionMoving;
+    bool isbMotionPause;
+    bool isbOverLoad;
+    bool isbMotorStop;
+    int cmdPos;
+    int actPos;
+    int actPosErr;
+    int actVel;
+    ushort PosItemNo;
+}EzServo_Alarm;
+#pragma pack()
 
 class ezi_driver
 {

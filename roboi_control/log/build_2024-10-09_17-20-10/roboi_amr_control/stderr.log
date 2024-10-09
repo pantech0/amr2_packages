@@ -1,0 +1,569 @@
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:12[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:13[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:14[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:132:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  132 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:173:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  173 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:16[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:18[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:19[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:20[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:22[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:23[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:132:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  132 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:173:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  173 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:25[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:26[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:27[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:28[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:29[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:31[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_DEFINE.h:107:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  107 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:32[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_V2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_V2_DEFINE.h:107:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  107 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:356:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  356 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:435:25:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  435 |                         [01;35m[K{[m[K
+      |                         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:430:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  430 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:462:25:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  462 |                         [01;35m[K{[m[K
+      |                         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:457:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  457 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:569:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  569 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:[m[K In member function ‘[01m[Kvoid roboi_motor::timer_callback()[m[K’:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:93:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kroboi_amr_msgs::msg::Ststatus_<std::allocator<void> >::Ststatus_(EzServo_Alarm&)[m[K’
+   93 |   motor_udp->st_fl = (roboi_amr_msgs::msg::Ststatus)steering_fl_->[01;31m[KStatus[m[K;
+      |                                                                   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/ststatus.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:63:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kroboi_amr_msgs::msg::Ststatus_<ContainerAllocator>::Ststatus_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   63 |   explicit [01;36m[KStstatus_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:63:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEzServo_Alarm[m[K’ to ‘[01m[Kconst std::allocator<void>&[m[K’
+   63 |   explicit Ststatus_([01;36m[Kconst ContainerAllocator & _alloc[m[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:36:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kroboi_amr_msgs::msg::Ststatus_<ContainerAllocator>::Ststatus_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   36 |   explicit [01;36m[KStstatus_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:36:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEzServo_Alarm[m[K’ to ‘[01m[Krosidl_runtime_cpp::MessageInitialization[m[K’
+   36 |   explicit Ststatus_([01;36m[Krosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL[m[K)
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr roboi_amr_msgs::msg::Ststatus_<std::allocator<void> >::Ststatus_(const roboi_amr_msgs::msg::Ststatus_<std::allocator<void> >&)[m[K’
+   32 | struct [01;36m[KStstatus_[m[K
+      |        [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEzServo_Alarm[m[K’ to ‘[01m[Kconst roboi_amr_msgs::msg::Ststatus_<std::allocator<void> >&[m[K’
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr roboi_amr_msgs::msg::Ststatus_<std::allocator<void> >::Ststatus_(roboi_amr_msgs::msg::Ststatus_<std::allocator<void> >&&)[m[K’
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ststatus__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEzServo_Alarm[m[K’ to ‘[01m[Kroboi_amr_msgs::msg::Ststatus_<std::allocator<void> >&&[m[K’
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:[m[K In member function ‘[01m[Kvoid roboi_motor::pos_command_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:96:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_command_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   96 | void roboi_motor::pos_command_callback([01;35m[Kconst std_msgs::msg::Float64MultiArray::SharedPtr pos_command_msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:12[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:13[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:14[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:132:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  132 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:173:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  173 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:16[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:18[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:19[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:20[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:22[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:133:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  133 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:174:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  174 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:23[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:132:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  132 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:173:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  173 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:25[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:26[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:27[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:28[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:29[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:135:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  135 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:176:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  176 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:31[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_DEFINE.h:107:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  107 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:32[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_V2_DEFINE.h:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   28 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_V2_DEFINE.h:107:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  107 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:356:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  356 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:435:25:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  435 |                         [01;35m[K{[m[K
+      |                         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:430:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  430 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:462:25:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  462 |                         [01;35m[K{[m[K
+      |                         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:457:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  457 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:569:9:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  569 |         [01;35m[K{[m[K
+      |         [01;35m[K^[m[K
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:505:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KALARM_DESCRIPTION[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  505 | static const wchar_t* [01;35m[KALARM_DESCRIPTION[m[K[MAX_ALARM_NUM] =
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:[m[K At global scope:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:505:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KALARM_DESCRIPTION[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  505 | static const wchar_t* [01;35m[KALARM_DESCRIPTION[m[K[MAX_ALARM_NUM] =
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:118: CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roboi_amr_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

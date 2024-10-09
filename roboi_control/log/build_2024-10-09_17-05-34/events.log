@@ -1,0 +1,391 @@
+[0.000000] (-) TimerEvent: {}
+[0.000188] (roboi_amr_control) JobQueued: {'identifier': 'roboi_amr_control', 'dependencies': OrderedDict()}
+[0.000374] (roboi_amr_control) JobStarted: {'identifier': 'roboi_amr_control'}
+[0.005401] (roboi_amr_control) JobProgress: {'identifier': 'roboi_amr_control', 'progress': 'cmake'}
+[0.005797] (roboi_amr_control) JobProgress: {'identifier': 'roboi_amr_control', 'progress': 'build'}
+[0.006326] (roboi_amr_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/build/roboi_amr_control', '--', '-j8', '-l8'], 'cwd': '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/build/roboi_amr_control', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboi-amr'), ('SSH_CLIENT', '192.168.11.230 57553 22'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/roboi-amr/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/lib:/home/roboi-amr/ros2_ws/install/roboi_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/roboi-amr/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/roboi-amr'), ('OLDPWD', '/home/roboi-amr/ros2_ws/src/amr2_packages'), ('TERM_PROGRAM_VERSION', '1.94.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a70a90f1-a4c7-40ad-a0d6-1659e08ec3e6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roboi-amr/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roboi-amr/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/roboi-amr/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install:/home/roboi-amr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roboi-amr'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '16'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roboi-amr/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-33694388da.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs:/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/build/roboi_amr_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.11.230 57553 192.168.0.41 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/local/lib/python3.10/dist-packages:/home/roboi-amr/ros2_ws/install/roboi_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs:/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble')]), 'shell': False}
+[0.022574] (roboi_amr_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098601] (roboi_amr_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.099874] (-) TimerEvent: {}
+[0.117539] (roboi_amr_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.119149] (roboi_amr_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.123011] (roboi_amr_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.128669] (roboi_amr_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.135903] (roboi_amr_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.154342] (roboi_amr_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.155279] (roboi_amr_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200062] (-) TimerEvent: {}
+[0.212321] (roboi_amr_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.240434] (roboi_amr_control) StdoutLine: {'line': b'-- Found roboi_amr_msgs: 0.0.0 (/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake)\n'}
+[0.249049] (roboi_amr_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.297077] (roboi_amr_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.297230] (roboi_amr_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include\n'}
+[0.297287] (roboi_amr_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.298322] (roboi_amr_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.300156] (-) TimerEvent: {}
+[0.300282] (roboi_amr_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.301397] (roboi_amr_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.308916] (roboi_amr_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.309008] (roboi_amr_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.310419] (roboi_amr_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.311172] (roboi_amr_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.317246] (roboi_amr_control) StdoutLine: {'line': b'-- Generating done\n'}
+[0.318356] (roboi_amr_control) StdoutLine: {'line': b'-- Build files have been written to: /home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/build/roboi_amr_control\n'}
+[0.337014] (roboi_amr_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_control\x1b[0m\n'}
+[0.352366] (roboi_amr_control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o\x1b[0m\n'}
+[0.352503] (roboi_amr_control) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_udp.cpp.o\x1b[0m\n'}
+[0.400264] (-) TimerEvent: {}
+[0.500584] (-) TimerEvent: {}
+[0.600906] (-) TimerEvent: {}
+[0.701227] (-) TimerEvent: {}
+[0.801573] (-) TimerEvent: {}
+[0.901908] (-) TimerEvent: {}
+[1.002239] (-) TimerEvent: {}
+[1.102575] (-) TimerEvent: {}
+[1.202908] (-) TimerEvent: {}
+[1.303241] (-) TimerEvent: {}
+[1.403573] (-) TimerEvent: {}
+[1.503913] (-) TimerEvent: {}
+[1.604256] (-) TimerEvent: {}
+[1.704605] (-) TimerEvent: {}
+[1.804951] (-) TimerEvent: {}
+[1.905285] (-) TimerEvent: {}
+[1.942154] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:5\x1b[m\x1b[K,\n'}
+[1.942383] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[1.942467] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:53:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.942542] (roboi_amr_control) StderrLine: {'line': b'   53 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K fl;\n'}
+[1.942609] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.942677] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.942745] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:54:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.942813] (roboi_amr_control) StderrLine: {'line': b'   54 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K fr;\n'}
+[1.942879] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.942950] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.943017] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:55:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.943092] (roboi_amr_control) StderrLine: {'line': b'   55 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K rl;\n'}
+[1.943158] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.943222] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.943286] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:56:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.943355] (roboi_amr_control) StderrLine: {'line': b'   56 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K rr;\n'}
+[1.943408] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.943462] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.946038] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:1\x1b[m\x1b[K:\n'}
+[1.946138] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:53:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.946201] (roboi_amr_control) StderrLine: {'line': b'   53 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K fl;\n'}
+[1.946256] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.946319] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.946375] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:54:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.946433] (roboi_amr_control) StderrLine: {'line': b'   54 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K fr;\n'}
+[1.946486] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.946539] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.946591] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:55:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.946653] (roboi_amr_control) StderrLine: {'line': b'   55 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K rl;\n'}
+[1.946707] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.946759] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.946813] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_udp.hpp:56:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStstatus\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kroboi_amr_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KStststus\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.946872] (roboi_amr_control) StderrLine: {'line': b'   56 |   roboi_amr_msgs::msg::\x1b[01;31m\x1b[KStstatus\x1b[m\x1b[K rr;\n'}
+[1.946925] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.946978] (roboi_amr_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KStststus\x1b[m\x1b[K\n'}
+[1.997441] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid roboi_udp::udp_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.997643] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:200:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kudp_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.997712] (roboi_amr_control) StderrLine: {'line': b'  200 | void roboi_udp::udp_callback(\x1b[01;35m\x1b[Kconst std_msgs::msg::Float64MultiArray::SharedPtr udp_msg\x1b[m\x1b[K)\n'}
+[1.997769] (roboi_amr_control) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.998236] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:12\x1b[m\x1b[K,\n'}
+[1.998305] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[1.998365] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[1.998420] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[1.998514] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[1.998570] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[1.998624] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.998682] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[1.998740] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.998837] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.998895] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[1.998951] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.999006] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.999064] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[1.999120] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.999182] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:13\x1b[m\x1b[K,\n'}
+[1.999239] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[1.999300] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[1.999359] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[1.999415] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[1.999470] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[1.999527] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.999585] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[1.999640] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.999739] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.999804] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[1.999860] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.000024] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ADC_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.000157] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.000211] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.000265] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:14\x1b[m\x1b[K,\n'}
+[2.000328] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.000385] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.000441] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.000497] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.000597] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.000654] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.000712] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.000767] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.000822] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:133:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.000879] (roboi_amr_control) StderrLine: {'line': b'  133 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.000934] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.000988] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_DEFINE.h:174:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.001081] (roboi_amr_control) StderrLine: {'line': b'  174 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.001137] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.001192] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:15\x1b[m\x1b[K,\n'}
+[2.001246] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.001306] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.001363] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.001501] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.001557] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.001613] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.001672] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.001728] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.001783] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:132:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.001839] (roboi_amr_control) StderrLine: {'line': b'  132 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.001896] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.001950] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_ABS_DEFINE.h:173:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.002007] (roboi_amr_control) StderrLine: {'line': b'  173 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.002062] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.002116] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:16\x1b[m\x1b[K,\n'}
+[2.002174] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.002230] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.002285] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.002347] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.002462] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.002520] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.002577] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.002632] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.002790] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:133:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.002848] (roboi_amr_control) StderrLine: {'line': b'  133 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.002903] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.002957] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_mini_DEFINE.h:174:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.003016] (roboi_amr_control) StderrLine: {'line': b'  174 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.003072] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.003126] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:18\x1b[m\x1b[K,\n'}
+[2.003249] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.003310] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.003369] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.003425] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.003480] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.003536] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.003593] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.003647] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.003701] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.003757] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.003811] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.003866] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.003922] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.004039] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.004096] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:19\x1b[m\x1b[K,\n'}
+[2.004152] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.004208] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.004384] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.004443] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.004648] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.004706] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.004764] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.004819] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.004873] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:133:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.004931] (roboi_amr_control) StderrLine: {'line': b'  133 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.004988] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.005043] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_ALL_DEFINE.h:174:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.005101] (roboi_amr_control) StderrLine: {'line': b'  174 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.005156] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.005212] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:20\x1b[m\x1b[K,\n'}
+[2.005268] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.005329] (-) TimerEvent: {}
+[2.005575] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.005686] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.005764] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.005831] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.005892] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.005955] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.006014] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.006072] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:133:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.006131] (roboi_amr_control) StderrLine: {'line': b'  133 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.006191] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.006250] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP_mini_DEFINE.h:174:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.006324] (roboi_amr_control) StderrLine: {'line': b'  174 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.006387] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.006448] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:22\x1b[m\x1b[K,\n'}
+[2.006508] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.006569] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.006628] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.006690] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.006759] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.006818] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.006877] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.006937] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.006995] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:133:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.007058] (roboi_amr_control) StderrLine: {'line': b'  133 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.007115] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.007171] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink_DEFINE.h:174:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.007231] (roboi_amr_control) StderrLine: {'line': b'  174 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.007293] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.007358] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:23\x1b[m\x1b[K,\n'}
+[2.007421] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.007481] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.007542] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.007601] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.007658] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.007719] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.007781] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.007838] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.007896] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:132:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.007959] (roboi_amr_control) StderrLine: {'line': b'  132 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.008020] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.008082] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziMotionLink2_DEFINE.h:173:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.008145] (roboi_amr_control) StderrLine: {'line': b'  173 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.008210] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.008271] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:25\x1b[m\x1b[K,\n'}
+[2.008341] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.008404] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.008465] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.008526] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.008588] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.008656] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.008726] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.008788] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.008848] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.008915] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.008974] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.009033] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.009092] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.009151] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.009211] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:26\x1b[m\x1b[K,\n'}
+[2.009274] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.009347] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.009410] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.009469] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.009530] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.009586] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.009654] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.009715] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.009774] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.009837] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.009899] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.009961] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_SSERVO_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.010026] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.010087] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.010150] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:27\x1b[m\x1b[K,\n'}
+[2.010212] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.010273] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.010340] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.010402] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.010469] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.010535] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.010602] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.010663] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.010724] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.010791] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.010855] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.010916] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_86_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.010981] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.011044] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.011104] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:28\x1b[m\x1b[K,\n'}
+[2.011165] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.011223] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.011283] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.011351] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.011411] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.011473] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.011537] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.011597] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.011656] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.011727] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.011787] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.011844] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO2_TO_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.011904] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.011963] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012027] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:29\x1b[m\x1b[K,\n'}
+[2.012089] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.012152] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.012214] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.012275] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.012343] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.012408] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.012470] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.012533] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012593] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:135:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.012661] (roboi_amr_control) StderrLine: {'line': b'  135 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.012724] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012784] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSTEP2_DEFINE.h:176:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.012850] (roboi_amr_control) StderrLine: {'line': b'  176 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.012911] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012973] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:31\x1b[m\x1b[K,\n'}
+[2.013036] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.013096] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.013152] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.013210] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.013271] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.013341] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.013405] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.013462] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.013518] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_DEFINE.h:107:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.013577] (roboi_amr_control) StderrLine: {'line': b'  107 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.013634] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.013695] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:32\x1b[m\x1b[K,\n'}
+[2.013756] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.013823] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.013884] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.013944] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.014002] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.014062] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_V2_DEFINE.h:28:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.014126] (roboi_amr_control) StderrLine: {'line': b'   28 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.014185] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.014243] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_EziSERVO_ALL_28_V2_DEFINE.h:107:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.014322] (roboi_amr_control) StderrLine: {'line': b'  107 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.014386] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.014443] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/FAS_EziMOTIONPlusE.h:15\x1b[m\x1b[K,\n'}
+[2.014504] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:10\x1b[m\x1b[K,\n'}
+[2.014562] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[2.014622] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[2.014680] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[2.014739] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:356:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.014805] (roboi_amr_control) StderrLine: {'line': b'  356 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.014865] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.014922] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:435:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.014980] (roboi_amr_control) StderrLine: {'line': b'  435 |                         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.015036] (roboi_amr_control) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.015093] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:430:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.015151] (roboi_amr_control) StderrLine: {'line': b'  430 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.015210] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.015267] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:462:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.015333] (roboi_amr_control) StderrLine: {'line': b'  462 |                         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.015390] (roboi_amr_control) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.015445] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:457:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.015508] (roboi_amr_control) StderrLine: {'line': b'  457 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.015567] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.015623] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:569:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ prohibits anonymous structs [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.015689] (roboi_amr_control) StderrLine: {'line': b'  569 |         \x1b[01;35m\x1b[K{\x1b[m\x1b[K\n'}
+[2.015747] (roboi_amr_control) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.105462] (-) TimerEvent: {}
+[2.205789] (-) TimerEvent: {}
+[2.306125] (-) TimerEvent: {}
+[2.348247] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/steering_control/MOTION_DEFINE.h:505:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KALARM_DESCRIPTION\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.348465] (roboi_amr_control) StderrLine: {'line': b'  505 | static const wchar_t* \x1b[01;35m\x1b[KALARM_DESCRIPTION\x1b[m\x1b[K[MAX_ALARM_NUM] =\n'}
+[2.348544] (roboi_amr_control) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.362638] (roboi_amr_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:76: CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o] Error 1\n'}
+[2.362835] (roboi_amr_control) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.406232] (-) TimerEvent: {}
+[2.506537] (-) TimerEvent: {}
+[2.606835] (-) TimerEvent: {}
+[2.707170] (-) TimerEvent: {}
+[2.807495] (-) TimerEvent: {}
+[2.907793] (-) TimerEvent: {}
+[3.008095] (-) TimerEvent: {}
+[3.108413] (-) TimerEvent: {}
+[3.208723] (-) TimerEvent: {}
+[3.309023] (-) TimerEvent: {}
+[3.409355] (-) TimerEvent: {}
+[3.509726] (-) TimerEvent: {}
+[3.610029] (-) TimerEvent: {}
+[3.619769] (roboi_amr_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:90: CMakeFiles/roboi_amr_control.dir/src/roboi_udp.cpp.o] Error 1\n'}
+[3.620007] (roboi_amr_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roboi_amr_control.dir/all] Error 2\n'}
+[3.620093] (roboi_amr_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.621789] (roboi_amr_control) CommandEnded: {'returncode': 2}
+[3.648027] (roboi_amr_control) JobEnded: {'identifier': 'roboi_amr_control', 'rc': 2}
+[3.658362] (-) EventReactorShutdown: {}

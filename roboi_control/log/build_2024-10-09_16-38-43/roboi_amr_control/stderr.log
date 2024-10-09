@@ -1,0 +1,11 @@
+/usr/bin/ld: CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o: in function `ezi_driver::open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)':
+roboi_motor.cpp:(.text._ZN10ezi_driver4openENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi[_ZN10ezi_driver4openENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi]+0xac): undefined reference to `PE::FAS_Connect(unsigned char, unsigned char, unsigned char, unsigned char, int)'
+/usr/bin/ld: CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o: in function `ezi_driver::init()':
+roboi_motor.cpp:(.text._ZN10ezi_driver4initEv[_ZN10ezi_driver4initEv]+0x1e): undefined reference to `PE::FAS_ServoAlarmReset(int)'
+/usr/bin/ld: roboi_motor.cpp:(.text._ZN10ezi_driver4initEv[_ZN10ezi_driver4initEv]+0x45): undefined reference to `PE::FAS_ServoEnable(int, int)'
+/usr/bin/ld: CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o: in function `ezi_driver::Get_Status()':
+roboi_motor.cpp:(.text._ZN10ezi_driver10Get_StatusEv[_ZN10ezi_driver10Get_StatusEv]+0x8b): undefined reference to `PE::FAS_GetAllStatus(int, unsigned int*, unsigned int*, unsigned int*, int*, int*, int*, int*, unsigned short*)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:215: roboi_amr_control] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roboi_amr_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

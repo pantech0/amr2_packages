@@ -57,4 +57,5 @@ ament_package()
 # ros2 node list
 # ros2 param list
 # find . -type f | xargs -n 5 touch
+# colcon build --packages-select
 # colcon build --symlink-install

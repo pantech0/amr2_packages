@@ -1,0 +1,16 @@
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/lib/roboi_amr_control/roboi_amr_control
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/ament_index/resource_index/package_run_dependencies/roboi_amr_control
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/ament_index/resource_index/parent_prefix_path/roboi_amr_control
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/environment/ament_prefix_path.sh
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/environment/ament_prefix_path.dsv
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/environment/path.sh
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/environment/path.dsv
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/local_setup.bash
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/local_setup.sh
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/local_setup.zsh
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/local_setup.dsv
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/package.dsv
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/ament_index/resource_index/packages/roboi_amr_control
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/cmake/roboi_amr_controlConfig.cmake
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/cmake/roboi_amr_controlConfig-version.cmake
+/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/install/roboi_amr_control/share/roboi_amr_control/package.xml
