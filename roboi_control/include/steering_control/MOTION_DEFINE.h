@@ -724,3 +724,26 @@ enum LOG_LEVEL
 	LOG_LEVEL_MOTION,		// Communication Log and parameter, motion, I/O functions
 	LOG_LEVEL_ALL,			// Communication Log and all functions
 };
+
+#pragma pack(1)
+typedef struct
+{
+    bool isbAlarmReset;
+    bool isbEmergencyStop;
+    bool isbErrorAll;
+    bool isbLimitOverNegative;
+    bool isbLimitOverPositive;
+    bool isbMotionMoving;
+    bool isbMotionPause;
+    bool isbOriginReturn;
+    bool isbOverCurrent;
+    bool isbOverHeat;
+    bool isbPositionTableEnd;
+    bool isbServoOn; 
+    int cmdPos;
+    int actPos;
+    int actPosErr;
+    int actVel;
+    ushort PosItemNo;
+}EzServo_Alarm;
+#pragma pack()

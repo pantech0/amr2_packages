@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/roboi-amr/ros2_ws/install/roboi_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/**",
+        "/home/roboi-amr/ros2_ws/src/roboi_amr2_ros2-main/include/**",
+        "/home/roboi-amr/ros2_ws/src/steering_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

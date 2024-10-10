@@ -12,9 +12,9 @@
 #include "std_msgs/msg/string.hpp"
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <std_msgs/msg/u_int16_multi_array.hpp>
+#include <std_msgs/msg/int32_multi_array.hpp>
 #include <string> 
-#include "roboi_amr_msgs/msg/ststatus.hpp"
-#include "roboi_amr_msgs/msg/udpsend.hpp"
+
 
 class roboi_udp
 {
@@ -23,6 +23,29 @@ public:
     virtual ~roboi_udp();
 
 private:
+#pragma pack(1)
+typedef struct
+{
+    bool isbAlarmReset;
+    bool isbEmergencyStop;
+    bool isbErrorAll;
+    bool isbLimitOverNegative;
+    bool isbLimitOverPositive;
+    bool isbMotionMoving;
+    bool isbMotionPause;
+    bool isbOriginReturn;
+    bool isbOverCurrent;
+    bool isbOverHeat;
+    bool isbPositionTableEnd;
+    bool isbServoOn; 
+    int cmdPos;
+    int actPos;
+    int actPosErr;
+    int actVel;
+    ushort PosItemNo;
+}EzServo_Alarm;
+#pragma pack()
+
 #pragma pack(1)
 typedef struct{
     uint8_t target;
@@ -51,10 +74,10 @@ typedef struct{
 typedef struct{
   int32_t count;
   uint8_t isindicator;
-  roboi_amr_msgs::msg::Ststatus fl;
-  roboi_amr_msgs::msg::Ststatus fr;
-  roboi_amr_msgs::msg::Ststatus rl;
-  roboi_amr_msgs::msg::Ststatus rr;
+  EzServo_Alarm stfl;
+  EzServo_Alarm stfr;
+  EzServo_Alarm strl;
+  EzServo_Alarm strr;
 } udp_status_t;
 #pragma pack()
 
@@ -96,9 +119,8 @@ typedef struct{
 }udp_receive_infos;
 
 udp_cfg udp_in_configuration;
-udp_cfg udp_out_configuration;
-roboi_amr_msgs::msg::Udpsend udp_stats;
-
+udp_cfg udp_out_configuration; 
+udp_status_t udp_stats;
 char read_buf[256];
 char write_buf[256];
 void init_udp_cfg(udp_cfg * udp);
@@ -106,7 +128,7 @@ void init_udp_cfg_list(udp_cfg_list * udp_list);
 bool configure_udp_client(udp_cfg * udp);
 bool configure_udp_server(udp_cfg * udp);
 int udp_send(udp_cfg *udp_out_configuration, void *data, int data_len);
-int udp_send(udp_cfg *udp_out_configuration, roboi_amr_msgs::msg::Udpsend::SharedPtr data, int data_len);
+int udp_send(udp_cfg *udp_out_configuration, udp_status_t data, int data_len);
 int udp_receive(udp_cfg *udp_in_configuration, void *data, int data_len);
 void data_paser(udp_packet_t *packet);
 
@@ -114,15 +136,14 @@ bool isConnect;
 int staterate;
 char* getlocalip(void);
 
-
 rclcpp::Node* node_;
 rclcpp::TimerBase::SharedPtr udptimer;
-rclcpp::Subscription<roboi_amr_msgs::msg::Udpsend>::SharedPtr udp_send_sub_;
+rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr udp_send_sub_;
 rclcpp::Publisher<std_msgs::msg::UInt16MultiArray>::SharedPtr led_command_pub_;
 
 
 void timer_callback(void);
-void udp_callback(const roboi_amr_msgs::msg::Udpsend::SharedPtr udp_msg);
+void udp_callback(const std_msgs::msg::Int32MultiArray::SharedPtr udp_msg);
 };
 
 #endif

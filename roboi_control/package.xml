@@ -14,6 +14,7 @@
 
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>roboi_amr_msgs</depend>
   <exec_depend>EziMOTIONPlusE</exec_depend>
 
   <export>

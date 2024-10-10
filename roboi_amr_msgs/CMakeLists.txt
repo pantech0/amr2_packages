@@ -8,25 +8,30 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
-        "msg/Ststatus.msg"
+        "msg/AngleStatus.msg"         
         "msg/Ledcommand.msg"
-        "msg/Udpsend.msg"
-        )
+        "msg/Udpmsg.msg"              
+)
 
-set(srv_files
-        "srv/LedCommand.srv"
-        )
+#set(srv_files
+#        "srv/LedCommand.srv"
+#)
 
 #set(action_files
 #        "action/LedCommand.action"
 #        )
 
+include_directories(
+  include
+  ${CMAKE_CURRENT_BINARY_DIR}/rclcpp/rclcpp
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
         ${msg_files}
-        ${srv_files}
+#        ${srv_files}
 #        ${action_files}
         DEPENDENCIES builtin_interfaces std_msgs
-        )
+)
 
 ament_export_dependencies(rosidl_default_runtime)
 

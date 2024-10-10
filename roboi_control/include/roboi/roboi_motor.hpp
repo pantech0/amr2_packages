@@ -4,8 +4,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include "roboi/ezi_server_plus.hpp"
 #include <std_msgs/msg/float64_multi_array.hpp>
-#include "roboi_amr_msgs/msg/ststatus.hpp"
-#include "roboi_amr_msgs/msg/udpsend.hpp"
+#include <std_msgs/msg/int32_multi_array.hpp>
+#include "steering_control/FAS_EziMOTIONPlusE.h"
 
 class roboi_motor
 {
@@ -32,7 +32,7 @@ typedef enum{
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr pos_command_sub_;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr vel_command_sub_;
-  rclcpp::Publisher<roboi_amr_msgs::msg::Udpsend>::SharedPtr upd_command_pub_;
+  rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr upd_command_pub_;
 
   void timer_callback();
   void pos_command_callback(const std_msgs::msg::Float64MultiArray::SharedPtr pos_command_msg);

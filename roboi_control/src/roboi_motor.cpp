@@ -60,7 +60,7 @@ roboi_motor::roboi_motor(rclcpp::Node* node, rclcpp::CallbackGroup::SharedPtr ca
   pos_command_sub_ = node_->create_subscription<std_msgs::msg::Float64MultiArray>("/position_controller/commands", qos_profile,
                                     std::bind(&roboi_motor::pos_command_callback, this, std::placeholders::_1), options);
 
-  upd_command_pub_ = node_->create_publisher<roboi_amr_msgs::msg::Udpsend>("/udp/commands", qos_profile);
+  upd_command_pub_ = node_->create_publisher<std_msgs::msg::Int32MultiArray>("/udp/commands", qos_profile);
 
 }
 
@@ -72,7 +72,7 @@ roboi_motor::~roboi_motor()
 void roboi_motor::timer_callback()
 {
   rclcpp::Time stamp = node_->now();
-  roboi_amr_msgs::msg::Udpsend motor_udp;
+  std_msgs::msg::Int32MultiArray motor_udp;
 
   auto fut_fl = std::async([this]() {
     return (steering_fl_->Get_Status());
@@ -90,7 +90,34 @@ void roboi_motor::timer_callback()
     return (steering_rr_->Get_Status());
   });
 
-  memcpy(&motor_udp.st_fl, &steering_fl_->Status, sizeof(roboi_amr_msgs::msg::Udpsend));
+  if(steering_fl_.get())
+  {
+    motor_udp.layout.dim.push_back(std_msgs::msg::MultiArrayDimension());
+    motor_udp.layout.dim[0].label = "Front left sterring";  
+
+    motor_udp.layout.dim[0].size = 20;
+    motor_udp.layout.dim[0].stride = 20;
+    motor_udp.data.resize(20, 0);
+    motor_udp.data[0] = steering_fl_->Status.isbAlarmReset;
+    motor_udp.data[1] = steering_fl_->Status.isbEmergencyStop;
+    motor_udp.data[2] = steering_fl_->Status.isbErrorAll;    
+    motor_udp.data[3] = steering_fl_->Status.isbLimitOverNegative;    
+    motor_udp.data[4] = steering_fl_->Status.isbLimitOverPositive;    
+    motor_udp.data[5] = steering_fl_->Status.isbMotionMoving;    
+    motor_udp.data[6] = steering_fl_->Status.isbMotionPause;    
+    motor_udp.data[7] = steering_fl_->Status.isbOriginReturn;    
+    motor_udp.data[8] = steering_fl_->Status.isbOverCurrent;    
+    motor_udp.data[9] = steering_fl_->Status.isbOverHeat;    
+    motor_udp.data[10] = steering_fl_->Status.isbPositionTableEnd;    
+    motor_udp.data[11] = steering_fl_->Status.isbServoOn;    
+    motor_udp.data[12] = steering_fl_->Status.cmdPos;    
+    motor_udp.data[13] = steering_fl_->Status.actPos;    
+    motor_udp.data[14] = steering_fl_->Status.actPosErr;    
+    motor_udp.data[15] = steering_fl_->Status.actVel; 
+    motor_udp.data[16] = steering_fl_->Status.PosItemNo;     
+
+    RCLCPP_INFO(node_->get_logger(), "motor timer callbase data push : %d ",motor_udp.data[11]);
+  }
 
   upd_command_pub_->publish(motor_udp);
 }

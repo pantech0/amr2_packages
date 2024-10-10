@@ -8,10 +8,8 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(roboi_amr_msgs REQUIRED)
-
-
+find_package(std_msgs REQUIRED)
 
 #Build
 include_directories(include)
@@ -24,14 +22,14 @@ add_executable(roboi_amr_control
 )
 ament_target_dependencies(roboi_amr_control
   rclcpp
-  std_msgs
   roboi_amr_msgs
+  std_msgs
 )
 
 # Install
 install(TARGETS
    roboi_amr_control
-  DESTINATION lib/${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}mc
 )
 
 target_link_libraries(roboi_amr_control EziMOTIONPlusE)

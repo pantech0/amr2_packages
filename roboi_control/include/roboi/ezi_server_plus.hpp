@@ -12,30 +12,28 @@
 using namespace PE;
 #define ST_GART_RATE 100
 
-#pragma pack(1)
-typedef struct
-{
-    bool isbErrorAll;
-    bool isbLimitOverPositive;
-    bool isbLimitOverNegative;
-    bool isbOverCurrent;
-    bool isbOverHeat;
-    bool isbEmergencyStop;
-    bool isbOriginReturn;
-    bool isbServoOn;
-    bool isbAlarmReset;
-    bool isbPositionTableEnd;
-    bool isbMotionMoving;
-    bool isbMotionPause;
-    bool isbOverLoad;
-    bool isbMotorStop;
-    int cmdPos;
-    int actPos;
-    int actPosErr;
-    int actVel;
-    ushort PosItemNo;
-}EzServo_Alarm;
-#pragma pack()
+// #pragma pack(1)
+// typedef struct
+// {
+//     bool isbAlarmReset;
+//     bool isbEmergencyStop;
+//     bool isbErrorAll;
+//     bool isbLimitOverNegative;
+//     bool isbLimitOverPositive;
+//     bool isbMotionMoving;
+//     bool isbMotionPause;
+//     bool isbOriginReturn;
+//     bool isbOverCurrent;
+//     bool isbOverHeat;
+//     bool isbPositionTableEnd;
+//     bool isbServoOn; 
+//     int cmdPos;
+//     int actPos;
+//     int actPosErr;
+//     int actVel;
+//     ushort PosItemNo;
+// }EzServo_Alarm;
+// #pragma pack()
 
 class ezi_driver
 {
@@ -59,7 +57,8 @@ public:
 
   virtual ~ezi_driver()
   {
-
+    FAS_ServoEnable(id_, false);
+    FAS_Close(id_);
   }
 
   bool open(std::string ip, int nBdID)
@@ -83,60 +82,43 @@ public:
 
   bool init(void)
   {
-    if (FAS_ServoAlarmReset(id_) != FMM_OK)
-      return false;
-
-    if (FAS_ServoEnable(id_, true) != FMM_OK)
-      return false;
+    FAS_ServoAlarmReset(id_);
+    FAS_ServoEnable(id_, true);
 
     return true;
   }
 
-  bool Set_Servo_Enable(bool enable)
+  void Set_Servo_Enable(bool enable)
   {
-    if (FAS_ServoEnable(id_, enable) != FMM_OK)
-      return false;
-
-    return true;
+    FAS_ServoEnable(id_, enable);
   }
 
-  bool Set_AbsPostion(double position, uint velo)
+  void Set_AbsPostion(double position, uint velo)
   {
     int pos = (int)(position * ST_GART_RATE);
 
-    if(FAS_MoveSingleAxisAbsPosEx(id_, pos, velo, &opt)  != FMM_OK)
-      return false;
-
-    return true;
+    FAS_MoveSingleAxisAbsPosEx(id_, pos, velo, &opt);
   }
 
-  bool Set_AbsPostionAccDec(double position, uint velo, ushort acc, uint decel)
+  void Set_AbsPostionAccDec(double position, uint velo, ushort acc, uint decel)
   {
     int pos = (int)(position * ST_GART_RATE);
 
     opt.wCustomAccelTime = acc;
     opt.wCustomDecelTime = decel;
 
-    if(FAS_MoveSingleAxisAbsPosEx(id_, pos, velo, &opt) != FMM_OK)
-      return false;
+    FAS_MoveSingleAxisAbsPosEx(id_, pos, velo, &opt) ;
 
-    return true;
   }
 
-  bool Set_MoveStop(void)
+  void Set_MoveStop(void)
   {
-    if(FAS_MoveStop(id_) != FMM_OK)
-      return false;
-
-    return true;
+    FAS_MoveStop(id_);
   }
 
-  bool Set_PositionClear(void)
+  void Set_PositionClear(void)
   {
-    if(FAS_ClearPosition(id_) != FMM_OK)
-      return false;
-
-    return true;
+    FAS_ClearPosition(id_);
   }
 
   double Get_Postion()
@@ -149,6 +131,15 @@ public:
     return pos_tick_ / ST_GART_RATE;
   }
 
+  bool bitCheck(uint data, uint check)
+  {
+    uint checked = data & check;
+
+    if( checked == check )
+      return true;
+
+    return false;
+  }
   bool Get_Status()
   {
     uint inStatus = 0;
@@ -161,21 +152,20 @@ public:
     ushort PosItemNo = 0;
 
     EZIMOTIONLINK_AXISSTATUS axisStatus;
-    if( FAS_GetAllStatus(id_, &inStatus, &outStatus, &AxisStatus, &cmdPos, &actPos, &actPosErr, &actVel, &PosItemNo) != FMM_OK)
-      return false;
+    FAS_GetAllStatus(id_, &inStatus, &outStatus, &AxisStatus, &cmdPos, &actPos, &actPosErr, &actVel, &PosItemNo);
 
-    Status.isbAlarmReset = (AxisStatus & axisStatus.FFLAG_ALARMRESET) ? true : false;
-    Status.isbEmergencyStop = (AxisStatus & axisStatus.FFLAG_EMGSTOP)? true : false;
-    Status.isbErrorAll = (AxisStatus & axisStatus.FFLAG_ERRSERVOALARM)? true : false;
-    Status.isbLimitOverNegative = (AxisStatus & axisStatus.FFLAG_HWNEGALMT)? true : false;
-    Status.isbLimitOverPositive = (AxisStatus & axisStatus.FFLAG_HWPOSILMT)? true : false;
-    Status.isbMotionMoving = (AxisStatus & axisStatus.FFLAG_MOTIONING)? true : false;
-    Status.isbMotionPause = (AxisStatus & axisStatus.FFLAG_MOTIONPAUSE)? true : false;
-    Status.isbOriginReturn = (AxisStatus & axisStatus.FFLAG_ORIGINRETOK)? true : false;
-    Status.isbOverCurrent = (AxisStatus & axisStatus.FFLAG_RESERVED3)? true : false;
-    Status.isbOverHeat = (AxisStatus & axisStatus.FFLAG_RESERVED7)? true : false;
-    Status.isbPositionTableEnd = (AxisStatus & axisStatus.FFLAG_PTSTOPPED)? true : false;
-    Status.isbServoOn = (AxisStatus & axisStatus.FFLAG_SERVOON)? true : false;
+    Status.isbAlarmReset = bitCheck(AxisStatus, 0x00200000);
+    Status.isbEmergencyStop = bitCheck(AxisStatus, 0x00010000);
+    Status.isbErrorAll = bitCheck(AxisStatus, 0x00000001);
+    Status.isbLimitOverNegative = bitCheck(AxisStatus, 0x00000004);
+    Status.isbLimitOverPositive = bitCheck(AxisStatus, 0x00000002);
+    Status.isbMotionMoving = bitCheck(AxisStatus, 0x08000000);
+    Status.isbMotionPause = bitCheck(AxisStatus, 0x10000000);
+    Status.isbOriginReturn = bitCheck(AxisStatus, 0x02000000);
+    Status.isbOverCurrent = bitCheck(AxisStatus, 0x00000100);
+    Status.isbOverHeat = bitCheck(AxisStatus, 0x00001000);
+    Status.isbPositionTableEnd = bitCheck(AxisStatus, 0x00400000);
+    Status.isbServoOn = bitCheck(AxisStatus, 0x00100000);
     Status.cmdPos = cmdPos;
     Status.actPos = actPos;
     Status.actPosErr = actPosErr;
@@ -185,12 +175,9 @@ public:
     return true;
   }
 
-  bool Set_Home(void)
+  void Set_Home(void)
   {
-    if(FAS_MoveOriginSingleAxis(id_) != FMM_OK)
-      return false;
-
-    return true;
+    FAS_MoveOriginSingleAxis(id_);
   }
 
 };

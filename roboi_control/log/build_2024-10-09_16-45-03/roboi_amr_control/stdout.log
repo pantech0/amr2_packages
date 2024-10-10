@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target roboi_amr_control[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_udp.cpp.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o[0m
