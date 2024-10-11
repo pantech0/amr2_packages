@@ -1,0 +1,400 @@
+[0.000000] (-) TimerEvent: {}
+[0.000224] (roboi_amr_msgs) JobQueued: {'identifier': 'roboi_amr_msgs', 'dependencies': OrderedDict()}
+[0.000253] (roboi_amr_control) JobQueued: {'identifier': 'roboi_amr_control', 'dependencies': OrderedDict([('roboi_amr_msgs', '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs')])}
+[0.000268] (roboi_amr_msgs) JobStarted: {'identifier': 'roboi_amr_msgs'}
+[0.005847] (roboi_amr_msgs) JobProgress: {'identifier': 'roboi_amr_msgs', 'progress': 'cmake'}
+[0.006897] (roboi_amr_msgs) JobProgress: {'identifier': 'roboi_amr_msgs', 'progress': 'build'}
+[0.006914] (roboi_amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs', '--', '-j8', '-l8'], 'cwd': '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboi-amr'), ('SSH_CLIENT', '192.168.0.123 39138 22'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/home/roboi-amr/ros2_ws/install/roboi_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/roboi-amr'), ('OLDPWD', '/home/roboi-amr/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.94.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-618b9eb7-3e57-448d-9bc1-21794794d5c5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/roboi-amr/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roboi-amr'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b20aabe23f.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.123 39138 192.168.0.41 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboi-amr/ros2_ws/install/roboi_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble')]), 'shell': False}
+[0.036404] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099592] (-) TimerEvent: {}
+[0.121627] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.140905] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.143096] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.148205] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.155723] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.165089] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.173132] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.177821] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.199683] (-) TimerEvent: {}
+[0.299895] (-) TimerEvent: {}
+[0.354845] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.400075] (-) TimerEvent: {}
+[0.500337] (-) TimerEvent: {}
+[0.583957] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600443] (-) TimerEvent: {}
+[0.674687] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.688450] (roboi_amr_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.700533] (-) TimerEvent: {}
+[0.702436] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.702525] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.702565] (roboi_amr_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.725593] (roboi_amr_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.764473] (roboi_amr_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.767199] (roboi_amr_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs\n'}
+[0.783980] (roboi_amr_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.789975] (roboi_amr_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.797325] (roboi_amr_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_roboi_amr_msgs\n'}
+[0.800630] (-) TimerEvent: {}
+[0.900891] (-) TimerEvent: {}
+[0.955245] (roboi_amr_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.955739] (roboi_amr_msgs) StdoutLine: {'line': b'writing roboi_amr_msgs.egg-info/PKG-INFO\n'}
+[0.955869] (roboi_amr_msgs) StdoutLine: {'line': b'writing dependency_links to roboi_amr_msgs.egg-info/dependency_links.txt\n'}
+[0.955974] (roboi_amr_msgs) StdoutLine: {'line': b'writing top-level names to roboi_amr_msgs.egg-info/top_level.txt\n'}
+[0.957585] (roboi_amr_msgs) StdoutLine: {'line': b"reading manifest file 'roboi_amr_msgs.egg-info/SOURCES.txt'\n"}
+[0.958051] (roboi_amr_msgs) StdoutLine: {'line': b"writing manifest file 'roboi_amr_msgs.egg-info/SOURCES.txt'\n"}
+[0.974948] (roboi_amr_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_roboi_amr_msgs_egg\n'}
+[1.000984] (-) TimerEvent: {}
+[1.051735] (roboi_amr_msgs) StdoutLine: {'line': b'[  4%] Built target roboi_amr_msgs__cpp\n'}
+[1.055713] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.058160] (roboi_amr_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.058365] (roboi_amr_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.058432] (roboi_amr_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.065875] (roboi_amr_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/roboi_amr_msgs/msg/detail/angle_status__functions.c.o\x1b[0m\n'}
+[1.066066] (roboi_amr_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/roboi_amr_msgs/msg/detail/ledcommand__functions.c.o\x1b[0m\n'}
+[1.066532] (roboi_amr_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/roboi_amr_msgs/msg/detail/udpmsg__functions.c.o\x1b[0m\n'}
+[1.101076] (-) TimerEvent: {}
+[1.144806] (roboi_amr_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libroboi_amr_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.188156] (roboi_amr_msgs) StdoutLine: {'line': b'[ 19%] Built target roboi_amr_msgs__rosidl_generator_c\n'}
+[1.198654] (roboi_amr_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.198856] (roboi_amr_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.198939] (roboi_amr_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.202661] (-) TimerEvent: {}
+[1.303152] (-) TimerEvent: {}
+[1.308703] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.329356] (roboi_amr_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roboi_amr_msgs/msg/ledcommand__type_support.cpp.o\x1b[0m\n'}
+[1.330006] (roboi_amr_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roboi_amr_msgs/msg/udpmsg__type_support.cpp.o\x1b[0m\n'}
+[1.332859] (roboi_amr_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roboi_amr_msgs/msg/angle_status__type_support.cpp.o\x1b[0m\n'}
+[1.403330] (-) TimerEvent: {}
+[1.458686] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.471463] (roboi_amr_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roboi_amr_msgs/msg/detail/dds_fastrtps/angle_status__type_support.cpp.o\x1b[0m\n'}
+[1.481915] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.497890] (roboi_amr_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roboi_amr_msgs/msg/detail/angle_status__type_support.cpp.o\x1b[0m\n'}
+[1.503427] (-) TimerEvent: {}
+[1.548124] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[1.577464] (roboi_amr_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roboi_amr_msgs/msg/angle_status__type_support.cpp.o\x1b[0m\n'}
+[1.603628] (-) TimerEvent: {}
+[1.678211] (roboi_amr_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roboi_amr_msgs/msg/ledcommand__type_support.cpp.o\x1b[0m\n'}
+[1.679928] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.698405] (roboi_amr_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roboi_amr_msgs/msg/detail/angle_status__type_support_c.cpp.o\x1b[0m\n'}
+[1.702094] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.704358] (-) TimerEvent: {}
+[1.714317] (roboi_amr_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roboi_amr_msgs/msg/udpmsg__type_support.cpp.o\x1b[0m\n'}
+[1.724950] (roboi_amr_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roboi_amr_msgs/msg/detail/angle_status__type_support.c.o\x1b[0m\n'}
+[1.726196] (roboi_amr_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roboi_amr_msgs/msg/detail/ledcommand__type_support.c.o\x1b[0m\n'}
+[1.726362] (roboi_amr_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roboi_amr_msgs/msg/detail/ledcommand__type_support_c.cpp.o\x1b[0m\n'}
+[1.766667] (roboi_amr_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libroboi_amr_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.766890] (roboi_amr_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libroboi_amr_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.766970] (roboi_amr_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roboi_amr_msgs/msg/detail/dds_fastrtps/ledcommand__type_support.cpp.o\x1b[0m\n'}
+[1.769519] (roboi_amr_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roboi_amr_msgs/msg/detail/udpmsg__type_support.c.o\x1b[0m\n'}
+[1.804467] (-) TimerEvent: {}
+[1.810710] (roboi_amr_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libroboi_amr_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.818541] (roboi_amr_msgs) StdoutLine: {'line': b'[ 61%] Built target roboi_amr_msgs__rosidl_typesupport_cpp\n'}
+[1.829169] (roboi_amr_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roboi_amr_msgs/msg/detail/dds_fastrtps/udpmsg__type_support.cpp.o\x1b[0m\n'}
+[1.829423] (roboi_amr_msgs) StdoutLine: {'line': b'[ 63%] Built target roboi_amr_msgs__rosidl_typesupport_c\n'}
+[1.837766] (roboi_amr_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roboi_amr_msgs/msg/detail/udpmsg__type_support_c.cpp.o\x1b[0m\n'}
+[1.859690] (roboi_amr_msgs) StdoutLine: {'line': b'[ 65%] Built target roboi_amr_msgs__rosidl_typesupport_introspection_c\n'}
+[1.875142] (roboi_amr_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roboi_amr_msgs/msg/detail/ledcommand__type_support.cpp.o\x1b[0m\n'}
+[1.904574] (-) TimerEvent: {}
+[1.921433] (roboi_amr_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roboi_amr_msgs/msg/detail/udpmsg__type_support.cpp.o\x1b[0m\n'}
+[2.006685] (-) TimerEvent: {}
+[2.107019] (-) TimerEvent: {}
+[2.181858] (roboi_amr_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libroboi_amr_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.194594] (roboi_amr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libroboi_amr_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.207133] (-) TimerEvent: {}
+[2.245217] (roboi_amr_msgs) StdoutLine: {'line': b'[ 74%] Built target roboi_amr_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.255641] (roboi_amr_msgs) StdoutLine: {'line': b'[ 74%] Built target roboi_amr_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.289680] (roboi_amr_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libroboi_amr_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.307244] (-) TimerEvent: {}
+[2.330153] (roboi_amr_msgs) StdoutLine: {'line': b'[ 76%] Built target roboi_amr_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.342379] (roboi_amr_msgs) StdoutLine: {'line': b'[ 76%] Built target roboi_amr_msgs\n'}
+[2.354447] (roboi_amr_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.407339] (-) TimerEvent: {}
+[2.507601] (-) TimerEvent: {}
+[2.607896] (-) TimerEvent: {}
+[2.702283] (roboi_amr_msgs) StdoutLine: {'line': b'[ 78%] Built target roboi_amr_msgs__py\n'}
+[2.708010] (-) TimerEvent: {}
+[2.709401] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_generator_py\x1b[0m\n'}
+[2.719129] (roboi_amr_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/roboi_amr_msgs/msg/_ledcommand_s.c.o\x1b[0m\n'}
+[2.719786] (roboi_amr_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/roboi_amr_msgs/msg/_angle_status_s.c.o\x1b[0m\n'}
+[2.719965] (roboi_amr_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/roboi_amr_msgs/msg/_udpmsg_s.c.o\x1b[0m\n'}
+[2.799994] (roboi_amr_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/roboi_amr_msgs/libroboi_amr_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.808094] (-) TimerEvent: {}
+[2.827358] (roboi_amr_msgs) StdoutLine: {'line': b'[ 87%] Built target roboi_amr_msgs__rosidl_generator_py\n'}
+[2.833832] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.834027] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.834096] (roboi_amr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.841811] (roboi_amr_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/roboi_amr_msgs/_roboi_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.841996] (roboi_amr_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/roboi_amr_msgs/_roboi_amr_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.844158] (roboi_amr_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/roboi_amr_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/roboi_amr_msgs/_roboi_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.908121] (roboi_amr_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.908306] (-) TimerEvent: {}
+[2.908408] (roboi_amr_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.932208] (roboi_amr_msgs) StdoutLine: {'line': b'[ 97%] Built target roboi_amr_msgs__rosidl_typesupport_c__pyext\n'}
+[2.932397] (roboi_amr_msgs) StdoutLine: {'line': b'[ 97%] Built target roboi_amr_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.949710] (roboi_amr_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.973911] (roboi_amr_msgs) StdoutLine: {'line': b'[100%] Built target roboi_amr_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.981143] (roboi_amr_msgs) CommandEnded: {'returncode': 0}
+[3.008412] (-) TimerEvent: {}
+[3.034761] (roboi_amr_msgs) JobProgress: {'identifier': 'roboi_amr_msgs', 'progress': 'install'}
+[3.040476] (roboi_amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs'], 'cwd': '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboi-amr'), ('SSH_CLIENT', '192.168.0.123 39138 22'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/home/roboi-amr/ros2_ws/install/roboi_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/roboi-amr'), ('OLDPWD', '/home/roboi-amr/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.94.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-618b9eb7-3e57-448d-9bc1-21794794d5c5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/roboi-amr/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roboi-amr'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b20aabe23f.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.123 39138 192.168.0.41 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboi-amr/ros2_ws/install/roboi_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble')]), 'shell': False}
+[3.045583] (roboi_amr_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.045758] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/ament_index/resource_index/rosidl_interfaces/roboi_amr_msgs\n'}
+[3.045848] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs\n'}
+[3.045915] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg\n'}
+[3.045997] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/udpmsg.h\n'}
+[3.046060] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/ledcommand.h\n'}
+[3.046125] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail\n'}
+[3.046190] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__struct.h\n'}
+[3.046290] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__functions.h\n'}
+[3.046359] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__type_support.h\n'}
+[3.046423] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__functions.c\n'}
+[3.046511] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__struct.h\n'}
+[3.046577] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__functions.h\n'}
+[3.046663] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__type_support.h\n'}
+[3.046748] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__struct.h\n'}
+[3.046830] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__functions.c\n'}
+[3.046926] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__functions.h\n'}
+[3.047022] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__type_support.h\n'}
+[3.047114] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__functions.c\n'}
+[3.047225] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.047304] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/angle_status.h\n'}
+[3.047385] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/library_path.sh\n'}
+[3.047468] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/library_path.dsv\n'}
+[3.052241] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_generator_c.so\n'}
+[3.052431] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_generator_c.so" to ""\n'}
+[3.052522] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs\n'}
+[3.052610] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg\n'}
+[3.052699] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.052795] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail\n'}
+[3.052871] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__rosidl_typesupport_fastrtps_c.h\n'}
+[3.052935] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__rosidl_typesupport_fastrtps_c.h\n'}
+[3.052989] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__rosidl_typesupport_fastrtps_c.h\n'}
+[3.053614] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.053806] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.053888] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs\n'}
+[3.053968] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg\n'}
+[3.054033] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/udpmsg.hpp\n'}
+[3.054118] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail\n'}
+[3.054185] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__struct.hpp\n'}
+[3.054266] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__builder.hpp\n'}
+[3.054341] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__struct.hpp\n'}
+[3.054420] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__builder.hpp\n'}
+[3.054508] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__builder.hpp\n'}
+[3.054594] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__traits.hpp\n'}
+[3.054701] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__traits.hpp\n'}
+[3.054799] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__traits.hpp\n'}
+[3.054892] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__struct.hpp\n'}
+[3.054987] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/ledcommand.hpp\n'}
+[3.055077] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/angle_status.hpp\n'}
+[3.055189] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs\n'}
+[3.055282] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg\n'}
+[3.055346] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail\n'}
+[3.055408] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.055483] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.055568] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/dds_fastrtps\n'}
+[3.055641] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.055713] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.056338] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.056527] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.056621] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs\n'}
+[3.056714] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg\n'}
+[3.056778] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.056854] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail\n'}
+[3.056925] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__rosidl_typesupport_introspection_c.h\n'}
+[3.056988] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__type_support.c\n'}
+[3.057051] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__rosidl_typesupport_introspection_c.h\n'}
+[3.057136] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__rosidl_typesupport_introspection_c.h\n'}
+[3.057201] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__type_support.c\n'}
+[3.057280] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__type_support.c\n'}
+[3.058006] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.058193] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.058660] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_c.so\n'}
+[3.058863] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.058959] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs\n'}
+[3.059027] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg\n'}
+[3.059102] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail\n'}
+[3.059170] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.059253] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/ledcommand__type_support.cpp\n'}
+[3.059319] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.059395] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__type_support.cpp\n'}
+[3.059468] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/angle_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.059570] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/include/roboi_amr_msgs/roboi_amr_msgs/msg/detail/udpmsg__type_support.cpp\n'}
+[3.060329] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.060505] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.060955] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_cpp.so\n'}
+[3.061118] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.061196] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/pythonpath.sh\n'}
+[3.061279] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/pythonpath.dsv\n'}
+[3.061360] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs-0.0.0-py3.10.egg-info\n'}
+[3.061438] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.061513] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.061593] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.061685] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.061804] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs\n'}
+[3.061892] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/__init__.py\n'}
+[3.061974] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/_roboi_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.062059] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/_roboi_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.062157] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.062262] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.062360] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg\n'}
+[3.062442] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/__init__.py\n'}
+[3.062526] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_angle_status_s.c\n'}
+[3.062604] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_ledcommand_s.c\n'}
+[3.062716] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_angle_status.py\n'}
+[3.062814] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_udpmsg_s.c\n'}
+[3.062908] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_ledcommand.py\n'}
+[3.063001] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_udpmsg.py\n'}
+[3.063097] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.063200] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/_roboi_amr_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.063299] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/libroboi_amr_msgs__rosidl_generator_py.so\n'}
+[3.090795] (roboi_amr_msgs) StdoutLine: {'line': b"Listing '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs'...\n"}
+[3.090920] (roboi_amr_msgs) StdoutLine: {'line': b"Compiling '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/__init__.py'...\n"}
+[3.090963] (roboi_amr_msgs) StdoutLine: {'line': b"Listing '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg'...\n"}
+[3.090998] (roboi_amr_msgs) StdoutLine: {'line': b"Compiling '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/__init__.py'...\n"}
+[3.091033] (roboi_amr_msgs) StdoutLine: {'line': b"Compiling '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_angle_status.py'...\n"}
+[3.091067] (roboi_amr_msgs) StdoutLine: {'line': b"Compiling '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_ledcommand.py'...\n"}
+[3.091100] (roboi_amr_msgs) StdoutLine: {'line': b"Compiling '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/msg/_udpmsg.py'...\n"}
+[3.093980] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.094202] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.094353] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.094570] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.094729] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.094937] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages/roboi_amr_msgs/roboi_amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.095309] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_generator_py.so\n'}
+[3.095539] (roboi_amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib/libroboi_amr_msgs__rosidl_generator_py.so" to ""\n'}
+[3.095637] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/msg/AngleStatus.idl\n'}
+[3.095735] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/msg/Ledcommand.idl\n'}
+[3.095833] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/msg/Udpmsg.idl\n'}
+[3.095900] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/msg/AngleStatus.msg\n'}
+[3.095986] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/msg/Ledcommand.msg\n'}
+[3.096052] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/msg/Udpmsg.msg\n'}
+[3.096137] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/ament_index/resource_index/package_run_dependencies/roboi_amr_msgs\n'}
+[3.096232] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/ament_index/resource_index/parent_prefix_path/roboi_amr_msgs\n'}
+[3.096300] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/ament_prefix_path.sh\n'}
+[3.096365] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/ament_prefix_path.dsv\n'}
+[3.096452] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/path.sh\n'}
+[3.096554] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/environment/path.dsv\n'}
+[3.096627] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/local_setup.bash\n'}
+[3.096702] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/local_setup.sh\n'}
+[3.096793] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/local_setup.zsh\n'}
+[3.096856] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/local_setup.dsv\n'}
+[3.096918] (roboi_amr_msgs) StdoutLine: {'line': b'-- Installing: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/package.dsv\n'}
+[3.096961] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/ament_index/resource_index/packages/roboi_amr_msgs\n'}
+[3.097045] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_generator_cExport.cmake\n'}
+[3.097126] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.097223] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.097308] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.097415] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.097568] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.097661] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.097775] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.097864] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.097967] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.098053] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.098165] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.098246] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.098362] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.098446] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.098555] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.098665] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/export_roboi_amr_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.098757] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.098825] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.098910] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.099019] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.099083] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.099143] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.099207] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.099265] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgsConfig.cmake\n'}
+[3.099320] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/cmake/roboi_amr_msgsConfig-version.cmake\n'}
+[3.099374] (roboi_amr_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/share/roboi_amr_msgs/package.xml\n'}
+[3.100650] (roboi_amr_msgs) CommandEnded: {'returncode': 0}
+[3.108574] (-) TimerEvent: {}
+[3.170887] (roboi_amr_msgs) JobEnded: {'identifier': 'roboi_amr_msgs', 'rc': 0}
+[3.171613] (roboi_amr_control) JobStarted: {'identifier': 'roboi_amr_control'}
+[3.176553] (roboi_amr_control) JobProgress: {'identifier': 'roboi_amr_control', 'progress': 'cmake'}
+[3.177145] (roboi_amr_control) JobProgress: {'identifier': 'roboi_amr_control', 'progress': 'build'}
+[3.177340] (roboi_amr_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_control', '--', '-j8', '-l8'], 'cwd': '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_control', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboi-amr'), ('SSH_CLIENT', '192.168.0.123 39138 22'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_NAMESPACE', 'robot1'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}]: {message}'), ('LD_LIBRARY_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/lib:/home/roboi-amr/ros2_ws/install/roboi_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/roboi-amr'), ('OLDPWD', '/home/roboi-amr/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.94.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-618b9eb7-3e57-448d-9bc1-21794794d5c5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/roboi-amr/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/roboi-amr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roboi-amr'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roboi-amr/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b20aabe23f.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs:/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/roboi-amr/ros2_ws/src/amr2_packages/build/roboi_amr_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.123 39138 192.168.0.41 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs/local/lib/python3.10/dist-packages:/home/roboi-amr/ros2_ws/install/roboi_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/roboi-amr/ros2_ws/src/amr2_packages/install/roboi_amr_msgs:/home/roboi-amr/ros2_ws/install/steering_control:/home/roboi-amr/ros2_ws/install/roboi_msgs:/opt/ros/humble')]), 'shell': False}
+[3.208692] (-) TimerEvent: {}
+[3.210791] (roboi_amr_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roboi_amr_control\x1b[0m\n'}
+[3.225638] (roboi_amr_control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o\x1b[0m\n'}
+[3.225870] (roboi_amr_control) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_udp.cpp.o\x1b[0m\n'}
+[3.226141] (roboi_amr_control) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o\x1b[0m\n'}
+[3.308797] (-) TimerEvent: {}
+[3.372198] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[3.372409] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1\x1b[m\x1b[K:\n'}
+[3.372473] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:11:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kroboi_amr_msgs/msg/anglestatus.hpp: No such file or directory\n'}
+[3.372524] (roboi_amr_control) StderrLine: {'line': b'   11 | #include \x1b[01;31m\x1b[K"roboi_amr_msgs/msg/anglestatus.hpp"\x1b[m\x1b[K\n'}
+[3.372572] (roboi_amr_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.372626] (roboi_amr_control) StderrLine: {'line': b'compilation terminated.\n'}
+[3.374128] (roboi_amr_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:118: CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o] Error 1\n'}
+[3.374331] (roboi_amr_control) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.380500] (roboi_amr_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5\x1b[m\x1b[K,\n'}
+[3.380705] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7\x1b[m\x1b[K,\n'}
+[3.380752] (roboi_amr_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1\x1b[m\x1b[K:\n'}
+[3.380799] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:11:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kroboi_amr_msgs/msg/anglestatus.hpp: No such file or directory\n'}
+[3.380862] (roboi_amr_control) StderrLine: {'line': b'   11 | #include \x1b[01;31m\x1b[K"roboi_amr_msgs/msg/anglestatus.hpp"\x1b[m\x1b[K\n'}
+[3.380922] (roboi_amr_control) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.380981] (roboi_amr_control) StderrLine: {'line': b'compilation terminated.\n'}
+[3.382617] (roboi_amr_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:76: CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o] Error 1\n'}
+[3.408886] (-) TimerEvent: {}
+[3.509165] (-) TimerEvent: {}
+[3.609434] (-) TimerEvent: {}
+[3.709765] (-) TimerEvent: {}
+[3.810015] (-) TimerEvent: {}
+[3.910271] (-) TimerEvent: {}
+[4.010540] (-) TimerEvent: {}
+[4.110761] (-) TimerEvent: {}
+[4.211033] (-) TimerEvent: {}
+[4.311297] (-) TimerEvent: {}
+[4.411585] (-) TimerEvent: {}
+[4.511844] (-) TimerEvent: {}
+[4.612128] (-) TimerEvent: {}
+[4.712391] (-) TimerEvent: {}
+[4.771365] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid roboi_udp::udp_callback(roboi_amr_msgs::msg::Udpmsg_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.771514] (roboi_amr_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:203:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kudp_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.771563] (roboi_amr_control) StderrLine: {'line': b'  203 | void roboi_udp::udp_callback(\x1b[01;35m\x1b[Kconst roboi_amr_msgs::msg::Udpmsg::SharedPtr udp_msg\x1b[m\x1b[K)\n'}
+[4.771603] (roboi_amr_control) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[4.812530] (-) TimerEvent: {}
+[4.912771] (-) TimerEvent: {}
+[5.013016] (-) TimerEvent: {}
+[5.113294] (-) TimerEvent: {}
+[5.213545] (-) TimerEvent: {}
+[5.313805] (-) TimerEvent: {}
+[5.414087] (-) TimerEvent: {}
+[5.514360] (-) TimerEvent: {}
+[5.614731] (-) TimerEvent: {}
+[5.714993] (-) TimerEvent: {}
+[5.815300] (-) TimerEvent: {}
+[5.915597] (-) TimerEvent: {}
+[6.015856] (-) TimerEvent: {}
+[6.116131] (-) TimerEvent: {}
+[6.216426] (-) TimerEvent: {}
+[6.316787] (-) TimerEvent: {}
+[6.417352] (-) TimerEvent: {}
+[6.517806] (-) TimerEvent: {}
+[6.618065] (-) TimerEvent: {}
+[6.718573] (-) TimerEvent: {}
+[6.819068] (-) TimerEvent: {}
+[6.919425] (-) TimerEvent: {}
+[7.019848] (-) TimerEvent: {}
+[7.120305] (-) TimerEvent: {}
+[7.220764] (-) TimerEvent: {}
+[7.321206] (-) TimerEvent: {}
+[7.421580] (-) TimerEvent: {}
+[7.522050] (-) TimerEvent: {}
+[7.622551] (-) TimerEvent: {}
+[7.723011] (-) TimerEvent: {}
+[7.823485] (-) TimerEvent: {}
+[7.923775] (-) TimerEvent: {}
+[8.024258] (-) TimerEvent: {}
+[8.124743] (-) TimerEvent: {}
+[8.225235] (-) TimerEvent: {}
+[8.325734] (-) TimerEvent: {}
+[8.425979] (-) TimerEvent: {}
+[8.526425] (-) TimerEvent: {}
+[8.626887] (-) TimerEvent: {}
+[8.682532] (roboi_amr_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roboi_amr_control.dir/all] Error 2\n'}
+[8.682704] (roboi_amr_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.683957] (roboi_amr_control) CommandEnded: {'returncode': 2}
+[8.706557] (roboi_amr_control) JobEnded: {'identifier': 'roboi_amr_control', 'rc': 2}
+[8.707119] (-) EventReactorShutdown: {}

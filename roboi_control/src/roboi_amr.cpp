@@ -7,9 +7,9 @@ RoboiAmr::RoboiAmr(const rclcpp::NodeOptions & node_options)
   roboi_indicator_callback_group_ = create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
   roboi_motor_callback_group_ = create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
 
-  roboi_udp_ = std::make_shared<roboi_udp>(this, roboi_udp_callback_group_);
   roboi_indicator_ = std::make_shared<roboi_indicator>(this, roboi_indicator_callback_group_);
   roboi_motor_ = std::make_shared<roboi_motor>(this, roboi_indicator_callback_group_);
+  roboi_udp_ = std::make_shared<roboi_udp>(this, roboi_udp_callback_group_);  
 }
 
 RoboiAmr::~RoboiAmr()

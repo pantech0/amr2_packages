@@ -110,7 +110,7 @@ void roboi_indicator::close_port()
   connection_ = false;
 }
 
-roboi_indicator::cmd_return_t roboi_indicator::send_data(std_msgs::msg::UInt16MultiArray::SharedPtr led_msg, int trial)
+roboi_indicator::cmd_return_t roboi_indicator::send_data(std_msgs::msg::UInt16MultiArray::SharedPtr led_msg)
 {
   if(!connection_)
   {
@@ -119,7 +119,7 @@ roboi_indicator::cmd_return_t roboi_indicator::send_data(std_msgs::msg::UInt16Mu
   }
   cmd_return_t ret;
 
-  char* send_data;
+  uint8_t* send_data;
   // stx
   // command
   // action
@@ -127,7 +127,7 @@ roboi_indicator::cmd_return_t roboi_indicator::send_data(std_msgs::msg::UInt16Mu
   // data 1
   // checksum
   // etx
-  send_data = (char*)malloc(7);
+  send_data = (uint8_t*)malloc(7);
   send_data[0] = 0xAA;
   send_data[1] = led_msg->data[0];
   send_data[2] = led_msg->data[1];
@@ -191,6 +191,6 @@ void roboi_indicator::led_callback(const std_msgs::msg::UInt16MultiArray::Shared
     break;
   }
 
-  send_data(led_msg, 3);
+  send_data(led_msg);
 }
 

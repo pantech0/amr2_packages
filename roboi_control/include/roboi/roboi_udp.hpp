@@ -2,6 +2,7 @@
 #define ROBOI_UDP_HPP_
 
 #include "rclcpp/rclcpp.hpp"
+#include <rclcpp/serialization.hpp>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/ioctl.h>
@@ -14,7 +15,8 @@
 #include <std_msgs/msg/u_int16_multi_array.hpp>
 #include <std_msgs/msg/int32_multi_array.hpp>
 #include <string> 
-
+#include "roboi_amr_msgs/msg/udpmsg.hpp"
+#include "roboi_amr_msgs/msg/angle_status.hpp"
 
 class roboi_udp
 {
@@ -57,6 +59,8 @@ typedef struct{
 #pragma pack(1)
   typedef struct{
     uint8_t command;
+    uint8_t motorno;
+    int data;
     float position;
     int velocity;
   }st_command_t;
@@ -128,7 +132,7 @@ void init_udp_cfg_list(udp_cfg_list * udp_list);
 bool configure_udp_client(udp_cfg * udp);
 bool configure_udp_server(udp_cfg * udp);
 int udp_send(udp_cfg *udp_out_configuration, void *data, int data_len);
-int udp_send(udp_cfg *udp_out_configuration, udp_status_t data, int data_len);
+int udp_send(udp_cfg *udp_out_configuration, roboi_amr_msgs::msg::Udpmsg::SharedPtr data, int data_len);
 int udp_receive(udp_cfg *udp_in_configuration, void *data, int data_len);
 void data_paser(udp_packet_t *packet);
 
@@ -136,14 +140,19 @@ bool isConnect;
 int staterate;
 char* getlocalip(void);
 
+roboi_amr_msgs::msg::Udpmsg udpsend;
+
+
 rclcpp::Node* node_;
 rclcpp::TimerBase::SharedPtr udptimer;
-rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr udp_send_sub_;
+rclcpp::Subscription<roboi_amr_msgs::msg::Udpmsg>::SharedPtr udp_send_sub_;
 rclcpp::Publisher<std_msgs::msg::UInt16MultiArray>::SharedPtr led_command_pub_;
+rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr mot_command_pub_;
+
 
 
 void timer_callback(void);
-void udp_callback(const std_msgs::msg::Int32MultiArray::SharedPtr udp_msg);
+void udp_callback(const roboi_amr_msgs::msg::Udpmsg::SharedPtr udp_msg);
 };
 
 #endif

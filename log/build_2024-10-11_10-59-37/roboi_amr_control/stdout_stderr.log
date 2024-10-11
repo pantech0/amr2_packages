@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target roboi_amr_control[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_udp.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o[0m
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_motor.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kroboi_amr_msgs/msg/anglestatus.hpp: No such file or directory
+   11 | #include [01;31m[K"roboi_amr_msgs/msg/anglestatus.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:118: CMakeFiles/roboi_amr_control.dir/src/roboi_motor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_motor.hpp:5[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/roboi_amr.hpp:7[m[K,
+                 from [01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_amr.cpp:1[m[K:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/include/roboi/ezi_server_plus.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kroboi_amr_msgs/msg/anglestatus.hpp: No such file or directory
+   11 | #include [01;31m[K"roboi_amr_msgs/msg/anglestatus.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/roboi_amr_control.dir/build.make:76: CMakeFiles/roboi_amr_control.dir/src/roboi_amr.cpp.o] Error 1
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:[m[K In member function ‘[01m[Kvoid roboi_udp::udp_callback(roboi_amr_msgs::msg::Udpmsg_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_control/src/roboi_udp.cpp:203:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kudp_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  203 | void roboi_udp::udp_callback([01;35m[Kconst roboi_amr_msgs::msg::Udpmsg::SharedPtr udp_msg[m[K)
+      |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roboi_amr_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -33,6 +33,7 @@ install(TARGETS
 )
 
 target_link_libraries(roboi_amr_control EziMOTIONPlusE)
+target_link_libraries(roboi_amr_control rclcpp::rclcpp)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

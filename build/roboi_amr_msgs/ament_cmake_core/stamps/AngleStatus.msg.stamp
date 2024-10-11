@@ -1,0 +1,17 @@
+bool isbalarmreset
+bool isbemergencystop
+bool isberrorall
+bool isblimitoverpegative
+bool isblimitoverpositive
+bool isbmotionmoving
+bool isbmotionpause
+bool isboriginreturn
+bool isbovercurrent
+bool isboverheat
+bool isbpositiontableend
+bool isbservoon 
+int32 cmdpos
+int32 actpos
+int32 actposerr
+int32 actvel
+uint16 positemno

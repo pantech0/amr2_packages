@@ -53,7 +53,7 @@ private:
 
   void open_port();
   void close_port();
-  cmd_return_t send_data(std_msgs::msg::UInt16MultiArray::SharedPtr led_msg, int trial = 1);
+  cmd_return_t send_data(std_msgs::msg::UInt16MultiArray::SharedPtr led_msg);
 };
 
 #endif

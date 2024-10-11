@@ -31,10 +31,11 @@ roboi_udp::roboi_udp(rclcpp::Node* node, rclcpp::CallbackGroup::SharedPtr callba
     RCLCPP_INFO(node_->get_logger(), "udptimer error");
 
   auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
-  udp_send_sub_ = node_->create_subscription<std_msgs::msg::Int32MultiArray>("/udp/commands", qos_profile,
+  udp_send_sub_ = node_->create_subscription<roboi_amr_msgs::msg::Udpmsg >("/udp/commands", qos_profile,
                                     std::bind(&roboi_udp::udp_callback, this, std::placeholders::_1), options);
 
   led_command_pub_ = node_->create_publisher<std_msgs::msg::UInt16MultiArray>("/led/commands", qos_profile);
+  mot_command_pub_ = node_->create_publisher<std_msgs::msg::Int32MultiArray>("/motor_controller/commands", qos_profile);
 
   RCLCPP_INFO(node_->get_logger(), "create_subscription Start");
 }
@@ -130,13 +131,33 @@ int roboi_udp::udp_send(udp_cfg *udp_out_configuration, void *data, int data_len
                   sizeof(udp_out_configuration->sockaddr)
               );
 }
-//(roboi_amr_msgs::msg::Udpsend *)&
-int roboi_udp::udp_send(udp_cfg *udp_out_configuration, udp_status_t data, int data_len)
+
+int roboi_udp::udp_send(udp_cfg *udp_out_configuration, const roboi_amr_msgs::msg::Udpmsg::SharedPtr data, int data_len)
 {
+    // ROS 2 직렬화 객체 생성
+  rclcpp::Serialization<roboi_amr_msgs::msg::Udpmsg> serializer;
+
+  // 메시지 직렬화
+  std::vector<unsigned char> buffer;
+
+  // rclcpp::SerializedMessage 객체 생성
+  rclcpp::SerializedMessage serialized_msg;
+
+  // 데이터 복사
+  serializer.serialize_message(data.get(), &serialized_msg);
+
+  uint8_t* serialized_data = serialized_msg.get_rcl_serialized_message().buffer;
+  size_t serialized_size = serialized_msg.size();
+  uint8_t pmsg_test[serialized_size];
+
+
+  memcpy(pmsg_test, serialized_data, serialized_size);
+  
+
   return sendto(
                   udp_out_configuration->fd,
-                  (udp_status_t *)&data,
-                  data_len,
+                  pmsg_test,
+                  serialized_size,
                   MSG_CONFIRM,
                   (const struct sockaddr *) &udp_out_configuration->sockaddr,
                   sizeof(udp_out_configuration->sockaddr)
@@ -160,11 +181,11 @@ int roboi_udp::udp_receive(udp_cfg *udp_in_configuration, void *data, int data_l
 
 void roboi_udp::timer_callback()
 {
-  if( isConnect == false )
-  {
-    if(udp_send(&udp_out_configuration, udp_stats, sizeof(udp_packet_t)) != -1)
-      isConnect = true;
-  }
+  // if( isConnect == false )
+  // {
+  //   if(udp_send(&udp_out_configuration, udp_stats, sizeof(udp_packet_t)) != -1)
+  //     isConnect = true;
+  // }
 
   // if((udp_stats.count%staterate) == 1)
   // {
@@ -173,12 +194,9 @@ void roboi_udp::timer_callback()
   //   RCLCPP_INFO(node_->get_logger(), "udp send");
   // }
 
-  if(isConnect)
-  {
-    int len = udp_receive(&udp_out_configuration, (void *)read_buf, sizeof(udp_packet_t));
-    if(len != -1 )
-      data_paser((udp_packet_t *)read_buf);
-  }
+  int len = udp_receive(&udp_out_configuration, (void *)read_buf, sizeof(udp_packet_t));
+  if(len != -1 )
+    data_paser((udp_packet_t *)read_buf);
 
   //udp_stats.count++;
 }
@@ -187,46 +205,38 @@ void roboi_udp::data_paser(udp_packet_t *packet)
 {
   switch (packet->command)
   {
-    case Udp_Command::LED:
-        std_msgs::msg::UInt16MultiArray data;
-        data.data.resize(3);
-        data.data[0] = packet->led.target;
-        data.data[1] = packet->led.action;
-        data.data[2] = packet->led.blinkrate;
-        led_command_pub_->publish(data);
+    case LED:{
+        std_msgs::msg::UInt16MultiArray led_data;
+        led_data.data.resize(3);
+        led_data.data[0] = packet->led.target;
+        led_data.data[1] = packet->led.action;
+        led_data.data[2] = packet->led.blinkrate;
+        led_command_pub_->publish(led_data);
 
-        RCLCPP_INFO(node_->get_logger(), "data_paser");  
+        RCLCPP_INFO(node_->get_logger(), "Udp_Command::LED");  
+      break;}
+    case STTERING:
+      {
+        std_msgs::msg::Int32MultiArray mot_data;
+        mot_data.data.resize(5);
+        mot_data.data[0] = packet->steering.command;
+        mot_data.data[1] = packet->steering.motorno;
+        mot_data.data[2] = packet->steering.data;
+        mot_data.data[3] = packet->steering.position;
+        mot_data.data[4] = packet->steering.velocity;     
+        mot_command_pub_->publish(mot_data);     
+        RCLCPP_INFO(node_->get_logger(), "Udp_Command::STTERING");              
       break;
+      }
   } 
 }
 
-void roboi_udp::udp_callback(const std_msgs::msg::Int32MultiArray::SharedPtr udp_msg)
+void roboi_udp::udp_callback(const roboi_amr_msgs::msg::Udpmsg::SharedPtr udp_msg)
 {
 
-  if( udp_msg->layout.dim[0].label == "Front left sterring")
-  {
-    udp_stats.stfl.isbAlarmReset = udp_msg->data[0];
-    udp_stats.stfl.isbEmergencyStop = udp_msg->data[1];
-    udp_stats.stfl.isbErrorAll = udp_msg->data[2];
-    udp_stats.stfl.isbLimitOverNegative = udp_msg->data[3];
-    udp_stats.stfl.isbLimitOverPositive= udp_msg->data[4];
-    udp_stats.stfl.isbMotionMoving = udp_msg->data[5];
-    udp_stats.stfl.isbMotionPause = udp_msg->data[6];
-    udp_stats.stfl.isbOriginReturn = udp_msg->data[7];
-    udp_stats.stfl.isbOverCurrent = udp_msg->data[8];
-    udp_stats.stfl.isbOverHeat = udp_msg->data[9];
-    udp_stats.stfl.isbPositionTableEnd = udp_msg->data[10];
-    udp_stats.stfl.isbServoOn = udp_msg->data[11];
-    udp_stats.stfl.cmdPos = (int)udp_msg->data[12];
-    udp_stats.stfl.actPos = (int)udp_msg->data[13];
-    udp_stats.stfl.actPosErr = (int)udp_msg->data[14];
-    udp_stats.stfl.actVel = (int)udp_msg->data[15];
-    udp_stats.stfl.PosItemNo = (ushort)udp_msg->data[16];
+    //RCLCPP_INFO(node_->get_logger(), "udp callback Driver servo on : %d, count : %d", udp_msg->st_fl.isbservoon, udp_msg->count);
 
-    RCLCPP_INFO(node_->get_logger(), "udp callbase data pop : %d ",udp_msg->data[11]);
-    udp_send(&udp_out_configuration, udp_stats, sizeof(udp_status_t));      
-  }
+    udp_send(&udp_out_configuration, udp_msg, sizeof(roboi_amr_msgs::msg::Udpmsg));   
 
-    udp_stats.count++;
 }
 
