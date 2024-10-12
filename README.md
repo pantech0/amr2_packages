@@ -155,9 +155,12 @@ alias killgazebo='killall -9 gazebo & killall -9 gzserver  & killall -9 gzclient
 alias af='ament_flake8'
 alias ac='ament_cpplint'
 ```
-  
-   * ROS2 work directory를 "ros_ws"로 설정하며, 이 directory가 변경이 되어 있으면 환경 설정에서 변경된 directory로 수정   
-     환경 설정은 ROS2 humble 버전이며 버전 변경시 "humble"에서 변경된 버전으로 수정
+필수 설치 파일
+```
+sudo apt install rospack-tools
+```
+ROS2 work directory를 "ros_ws"로 설정하며, 이 directory가 변경이 되어 있으면 환경 설정에서 변경된 directory로 수정   
+환경 설정은 ROS2 humble 버전이며 버전 변경시 "humble"에서 변경된 버전으로 수정
 
 + Ixxat USB to CAN linux driver active
  - ixxat usb to can driver는 socket 형태 드라이버를 다운로드 하여야 함.
