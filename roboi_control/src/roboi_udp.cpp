@@ -36,6 +36,7 @@ roboi_udp::roboi_udp(rclcpp::Node* node, rclcpp::CallbackGroup::SharedPtr callba
 
   led_command_pub_ = node_->create_publisher<std_msgs::msg::UInt16MultiArray>("/led/commands", qos_profile);
   mot_command_pub_ = node_->create_publisher<std_msgs::msg::Int32MultiArray>("/motor_controller/commands", qos_profile);
+  wheel_pub_ = node_->create_publisher<std_msgs::msg::Float64MultiArray>("/wheel_controller/commands", qos_profile);
 
   RCLCPP_INFO(node_->get_logger(), "create_subscription Start");
 }
@@ -152,7 +153,7 @@ int roboi_udp::udp_send(udp_cfg *udp_out_configuration, const roboi_amr_msgs::ms
 
 
   memcpy(pmsg_test, serialized_data, serialized_size);
-  
+
 
   return sendto(
                   udp_out_configuration->fd,
@@ -213,22 +214,36 @@ void roboi_udp::data_paser(udp_packet_t *packet)
         led_data.data[2] = packet->led.blinkrate;
         led_command_pub_->publish(led_data);
 
-        RCLCPP_INFO(node_->get_logger(), "Udp_Command::LED");  
+        RCLCPP_INFO(node_->get_logger(), "Udp_Command::LED");
       break;}
     case STTERING:
       {
         std_msgs::msg::Int32MultiArray mot_data;
         mot_data.data.resize(5);
-        mot_data.data[0] = packet->steering.command;
-        mot_data.data[1] = packet->steering.motorno;
-        mot_data.data[2] = packet->steering.data;
-        mot_data.data[3] = packet->steering.position;
-        mot_data.data[4] = packet->steering.velocity;     
-        mot_command_pub_->publish(mot_data);     
-        RCLCPP_INFO(node_->get_logger(), "Udp_Command::STTERING");              
+        mot_data.data[0] = packet->motor.command;
+        mot_data.data[1] = packet->motor.motorno;
+        mot_data.data[2] = packet->motor.data;
+        mot_data.data[3] = packet->motor.position;
+        mot_data.data[4] = packet->motor.velocity;
+        mot_command_pub_->publish(mot_data);
+        RCLCPP_INFO(node_->get_logger(), "Udp_Command::STTERING");
       break;
       }
-  } 
+    case DRIVING:
+      {
+        std_msgs::msg::Float64MultiArray driver_data;
+        driver_data.data.resize(5);
+        driver_data.data[0] = packet->motor.command;
+        driver_data.data[1] = packet->motor.motorno;
+        driver_data.data[2] = packet->motor.data;
+        driver_data.data[3] = packet->motor.position;
+        driver_data.data[4] = packet->motor.velocity;
+        wheel_pub_->publish(driver_data);
+        RCLCPP_INFO(node_->get_logger(), "Udp_Command::DRIVING");
+      break;
+      }
+
+  }
 }
 
 void roboi_udp::udp_callback(const roboi_amr_msgs::msg::Udpmsg::SharedPtr udp_msg)
@@ -236,7 +251,7 @@ void roboi_udp::udp_callback(const roboi_amr_msgs::msg::Udpmsg::SharedPtr udp_ms
 
     //RCLCPP_INFO(node_->get_logger(), "udp callback Driver servo on : %d, count : %d", udp_msg->st_fl.isbservoon, udp_msg->count);
 
-    udp_send(&udp_out_configuration, udp_msg, sizeof(roboi_amr_msgs::msg::Udpmsg));   
+    udp_send(&udp_out_configuration, udp_msg, sizeof(roboi_amr_msgs::msg::Udpmsg));
 
 }
 

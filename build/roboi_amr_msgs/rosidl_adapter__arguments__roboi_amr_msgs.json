@@ -1,8 +1,0 @@
-{
-  "package_name": "roboi_amr_msgs",
-  "non_idl_tuples": [
-    "/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs:msg/AngleStatus.msg",
-    "/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs:msg/Ledcommand.msg",
-    "/home/roboi-amr/ros2_ws/src/amr2_packages/roboi_amr_msgs:msg/Udpmsg.msg"
-  ]
-}

@@ -14,7 +14,7 @@
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <std_msgs/msg/u_int16_multi_array.hpp>
 #include <std_msgs/msg/int32_multi_array.hpp>
-#include <string> 
+#include <string>
 #include "roboi_amr_msgs/msg/udpmsg.hpp"
 #include "roboi_amr_msgs/msg/angle_status.hpp"
 
@@ -39,7 +39,7 @@ typedef struct
     bool isbOverCurrent;
     bool isbOverHeat;
     bool isbPositionTableEnd;
-    bool isbServoOn; 
+    bool isbServoOn;
     int cmdPos;
     int actPos;
     int actPosErr;
@@ -63,14 +63,14 @@ typedef struct{
     int data;
     float position;
     int velocity;
-  }st_command_t;
+  }mot_command_t;
 #pragma pack()
 
 #pragma pack(1)
   typedef struct{
     uint8_t command;
     led_command_t led;
-    st_command_t steering;
+    mot_command_t motor;
 } udp_packet_t;
 #pragma pack()
 
@@ -123,7 +123,7 @@ typedef struct{
 }udp_receive_infos;
 
 udp_cfg udp_in_configuration;
-udp_cfg udp_out_configuration; 
+udp_cfg udp_out_configuration;
 udp_status_t udp_stats;
 char read_buf[256];
 char write_buf[256];
@@ -146,8 +146,10 @@ roboi_amr_msgs::msg::Udpmsg udpsend;
 rclcpp::Node* node_;
 rclcpp::TimerBase::SharedPtr udptimer;
 rclcpp::Subscription<roboi_amr_msgs::msg::Udpmsg>::SharedPtr udp_send_sub_;
+
 rclcpp::Publisher<std_msgs::msg::UInt16MultiArray>::SharedPtr led_command_pub_;
 rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr mot_command_pub_;
+rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr wheel_pub_;
 
 
 

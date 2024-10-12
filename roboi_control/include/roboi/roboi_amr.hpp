@@ -5,6 +5,7 @@
 #include "roboi/roboi_udp.hpp"
 #include "roboi/roboi_indicator.hpp"
 #include "roboi/roboi_motor.hpp"
+#include "roboi/roboi_driver.hpp"
 
 class RoboiAmr : public rclcpp::Node
 {
@@ -16,10 +17,12 @@ private:
   std::shared_ptr<roboi_udp> roboi_udp_;
   std::shared_ptr<roboi_indicator> roboi_indicator_;
   std::shared_ptr<roboi_motor> roboi_motor_;
+  std::shared_ptr<roboi_driver> roboi_driver_;
 
   rclcpp::CallbackGroup::SharedPtr roboi_udp_callback_group_;
   rclcpp::CallbackGroup::SharedPtr roboi_indicator_callback_group_;
   rclcpp::CallbackGroup::SharedPtr roboi_motor_callback_group_;
+  rclcpp::CallbackGroup::SharedPtr roboi_driver_callback_group_;
 };
 
 #endif

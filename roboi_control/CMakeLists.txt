@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(roboi_amr_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 #Build
 include_directories(include)
@@ -19,11 +20,13 @@ add_executable(roboi_amr_control
   src/roboi_udp.cpp
   src/roboi_indicator.cpp
   src/roboi_motor.cpp
+  src/roboi_driver.cpp
 )
 ament_target_dependencies(roboi_amr_control
   rclcpp
   roboi_amr_msgs
   std_msgs
+  sensor_msgs
 )
 
 # Install
@@ -58,3 +61,5 @@ ament_package()
 # find . -type f | xargs -n 5 touch
 # colcon build --packages-select
 # colcon build --symlink-install
+# sudo ip link set up can0 type can bitrate 1000000
+# sudo ip link set can0 up
