@@ -109,6 +109,9 @@ network:
 
 + ROS2 환경 설정(.bashrc)
 ```
+sudo vi ~/.bashrc
+```
+```
 source /opt/ros/humble/setup.bash
 source ~/ros2_ws/install/local_setup.bash
 
@@ -152,11 +155,8 @@ alias killgazebo='killall -9 gazebo & killall -9 gzserver  & killall -9 gzclient
 alias af='ament_flake8'
 alias ac='ament_cpplint'
 ```
-```
-sudo vi ~/.bashrc
-```
   
-  + ROS2 work directory를 "ros_ws"로 설정하며, 이 directory가 변경이 되어 있으면 환경 설정에서 변경된 directory로 수정   
+  * ROS2 work directory를 "ros_ws"로 설정하며, 이 directory가 변경이 되어 있으면 환경 설정에서 변경된 directory로 수정   
     환경 설정은 ROS2 humble 버전이며 버전 변경시 "humble"에서 변경된 버전으로 수정
 
 + Ixxat USB to CAN linux driver active
