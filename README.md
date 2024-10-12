@@ -109,24 +109,6 @@ network:
 
 + ROS2 환경 설정(.bashrc)
 ```
-sudo ip link set up can0 type can bitrate 1000000
-sudo ip link set can0 up
-```
-
-+ Fastech EZ linux driver install
-'''
-
-'''
-Fastech 홈페이지 다운로드에서 "Plus-E Linux Library" 다운로드   
-Fastech library ros 폴더에 복사(해당 CPU 아키텍처에 맞는 라이브러리 선택)
-'''
-sudo cp -r -v -p libEziMOTIONPlusE.so* /opt/ros/humble/lib
-sudo cp -r -v -p libEziMOTIONPlusE.so*/usr/local/lib
-sudo ldconfig
-'''
-
-+ Ixxat USB to CAN linux driver active
-```
 source /opt/ros/humble/setup.bash
 source ~/ros2_ws/install/local_setup.bash
 
@@ -170,8 +152,43 @@ alias killgazebo='killall -9 gazebo & killall -9 gzserver  & killall -9 gzclient
 alias af='ament_flake8'
 alias ac='ament_cpplint'
 ```
+```
+sudo vi ~/.bashrc
+```
 ROS2 work directory를 "ros_ws"로 설정하며, 이 directory가 변경이 되어 있으면 환경 설정에서 변경된 directory로 수정   
 환경 설정은 ROS2 humble 버전이며 버전 변경시 "humble"에서 변경된 버전으로 수정
+
++ Ixxat USB to CAN linux driver active
+ixxat usb to can driver는 socket 형태 드라이버를 다운로드 하여야 함.
+링크 : https://forum.hms-networks.com/t/usb-to-canv2-adapter-driver-for-ubuntu-22-04-kernel-5-19-0-38-generic/72083
+압축 해제 후 ix_usb_can_2.0.367-MOD 폴더에서 드라이브 설치
+```
+sudo make all
+sudo make install
+```
+이후 CAN을 아래와 같이 설치 하여야 함.    
+정상 설치시 ifconfig을 통하여 can0을 확인 하여야 함.
+```
+sudo ip link set up can0 type can bitrate 1000000
+sudo ip link set can0 up
+```
+![image](https://github.com/user-attachments/assets/3e995d4a-b628-4019-89ff-3a06843f7ca8)
+이 후 can 설정 내용을 .bashrc(리눅스 전역 환경설정 파일)에 등록   
+
++ Fastech EZ linux driver install
+'''
+
+'''
+Fastech 홈페이지 다운로드에서 "Plus-E Linux Library" 다운로드   
+Fastech library ros 폴더에 복사(해당 CPU 아키텍처에 맞는 라이브러리 선택)
+'''
+sudo cp -r -v -p libEziMOTIONPlusE.so* /opt/ros/humble/lib
+sudo cp -r -v -p libEziMOTIONPlusE.so*/usr/local/lib
+sudo ldconfig
+'''
+
+
+
 
 + modprobe: ERROR: could not insert ‘ix_usb_can’: Invalid argument”
 ```
