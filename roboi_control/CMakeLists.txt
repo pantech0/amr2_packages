@@ -21,6 +21,7 @@ add_executable(roboi_amr_control
   src/roboi_indicator.cpp
   src/roboi_motor.cpp
   src/roboi_driver.cpp
+  src/roboi_joy.cpp
 )
 ament_target_dependencies(roboi_amr_control
   rclcpp
@@ -37,6 +38,7 @@ install(TARGETS
 
 target_link_libraries(roboi_amr_control EziMOTIONPlusE)
 target_link_libraries(roboi_amr_control rclcpp::rclcpp)
+target_link_libraries(roboi_amr_control bluetooth)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

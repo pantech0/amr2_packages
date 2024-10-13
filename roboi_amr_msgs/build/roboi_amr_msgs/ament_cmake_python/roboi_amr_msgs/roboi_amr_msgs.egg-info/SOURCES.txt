@@ -1,0 +1,6 @@
+setup.py
+roboi_amr_msgs/__init__.py
+roboi_amr_msgs.egg-info/PKG-INFO
+roboi_amr_msgs.egg-info/SOURCES.txt
+roboi_amr_msgs.egg-info/dependency_links.txt
+roboi_amr_msgs.egg-info/top_level.txt
