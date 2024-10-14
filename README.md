@@ -193,9 +193,6 @@ sudo cp -r -v -p libEziMOTIONPlusE.so*/usr/local/lib
 sudo ldconfig
 '''
 
-
-
-
 + modprobe: ERROR: could not insert ‘ix_usb_can’: Invalid argument”
 ```
 make clean, make uninstall, restart, make all and make install
@@ -205,6 +202,27 @@ make clean, make uninstall, restart, make all and make install
 ```
  find . -type f | xargs -n 5 touch
 ```
+
++ PS4 Joystick과 유사한 조이스틱 사용시 패키지
+```
+cd ~
+sudo apt install -y ros-foxy-joy*
+mkdir -p ros2_ws/src/
+cd ros2_ws/src/
+git clone https://github.com/Ar-Ray-code/ps_ros2_common.git
+cd ~/ros2_ws/
+source /opt/ros/foxy/setup.bash
+colcon build
+source install/local_setup.bash
+```
+위 패키지를 설치하고 위 패키지에서 제공되는 메시지를 확인하여 조이스틱 값을 받아 온다.     
+여기에 사용되는 메지지 타입은 sensor_msgs::msg::Joy 메지지를 사용하며, 노드 이름은 "/joy" 이다.
+
+```
+ros2 run joy joy_node
+```
+위 패키지를 실행하여 "/joy"노드에서 메시지를 수신(create_subscription)을 한다.
+
 
 + ros2 build clean
 ```
